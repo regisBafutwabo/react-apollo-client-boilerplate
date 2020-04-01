@@ -23,6 +23,14 @@ A React-typescript configuration template for projects using apollo client as th
 In order to use this template, you should have a basic understanding of React and Apollo Client.
 
 <a name="run"></a>
+## Running the Boilerplate
+
+This boilerplate can be used for three use cases:
+- using it with no GraphQL or Hasura API server
+- using it with a GraphQL API server
+- using it with a Hasura API server
+
+Each of those use cases require some settings before running `yarn start`. Those settings are shown below:
 
 ## Running the Boilerplate **with NO GraphQL API!!**
 
