@@ -37,38 +37,40 @@ Each of those use cases require some settings before running `yarn start`. Those
 
 	1. git clone https://github.com/regisBafutwabo/react-typescript-boilerplate.git <YOUR PROJECT NAME>
 	2. cd <YOUR PROJECT NAME>
-	3. yarn
-	4. Modify the  `./.graphqlrc.yml` file as follows:
+	3. rm -rf .git : remove the git folder and initiate your own git ...
+	4. yarn
+	5. Modify the  `./.graphqlrc.yml` file as follows:
 
 <img src="docs/noAPI_graphqlrc_modification.png" alt="./.graphqlrc.yml" width="80%"/>
 
-     5. yarn gen
-     6. yarn start
+     6. yarn gen
+     7. yarn start
 
 <a name="graphql"></a>
 ## Running the Boilerplate **with a GraphQL API!!**
 
 	1. git clone https://github.com/regisBafutwabo/react-typescript-boilerplate.git <YOUR PROJECT NAME>
 	2. cd <YOUR PROJECT NAME>
-	3. yarn
-	4. setup the .env with the API configurations as shown in the next section
-	5. yarn gen
-	6. yarn start
+    3. rm -rf .git : remove the git folder and initiate your own git ...
+	4. yarn
+	5. setup the .env with the API configurations as shown in the next section
+	6. yarn gen
+	7. yarn start
 
 <a name="hasura"></a>
 ## Running the Boilerplate **with a Hasura API!!**
 
     1. git clone https://github.com/regisBafutwabo/react-typescript-boilerplate.git <YOUR PROJECT NAME>
 	2. cd <YOUR PROJECT NAME>
-	3. yarn
-
-	4. Modify `src/apollo/state/**/*.schema.ts`: every `*.schema.ts` file in the apollo/state subfolders as follows:
+	3. rm -rf .git : remove the git folder and initiate your own git ...
+	4. yarn
+	5. Modify `src/apollo/state/**/*.schema.ts`: every `*.schema.ts` file in the apollo/state subfolders as follows:
 
 <img src="docs/Hasura_schema_definition.png" alt="./src/apollo/state/i18n/i18n.schema.ts"/>
 
 
-	5. yarn gen
-	6. yarn start
+	6. yarn gen
+	7. yarn start
 
 
 <a name="env"></a>
