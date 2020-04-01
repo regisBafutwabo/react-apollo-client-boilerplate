@@ -26,12 +26,13 @@ In order to use this template, you should have a basic understanding of React an
 ## Running the Boilerplate
 
 This boilerplate can be used for three use cases:
-- using it with no GraphQL or Hasura API server
-- using it with a GraphQL API server
-- using it with a Hasura API server
+- [using it with no GraphQL or Hasura API server](#noApi)
+- [using it with a GraphQL API server](#graphql)
+- [using it with a Hasura API server](#hasura)
 
 Each of those use cases require some settings before running `yarn start`. Those settings are shown below:
 
+<a name="noApi"></a>
 ## Running the Boilerplate **with NO GraphQL API!!**
 
 	1. git clone https://github.com/regisBafutwabo/react-typescript-boilerplate.git <YOUR PROJECT NAME>
@@ -44,6 +45,7 @@ Each of those use cases require some settings before running `yarn start`. Those
      5. yarn gen
      6. yarn start
 
+<a name="graphql"></a>
 ## Running the Boilerplate **with a GraphQL API!!**
 
 	1. git clone https://github.com/regisBafutwabo/react-typescript-boilerplate.git <YOUR PROJECT NAME>
@@ -53,7 +55,7 @@ Each of those use cases require some settings before running `yarn start`. Those
 	5. yarn gen
 	6. yarn start
 
-
+<a name="hasura"></a>
 ## Running the Boilerplate **with a Hasura API!!**
 
     1. git clone https://github.com/regisBafutwabo/react-typescript-boilerplate.git <YOUR PROJECT NAME>
@@ -186,7 +188,7 @@ this folder contains all of your storybook components. For more information on s
 **storybook**: starts the storybook server/app
 		
 
-<a name="scripts"></a>
+<a name="contributing"></a>
 ## Contributing
 
 To contribute to <project_name>, follow these steps:
