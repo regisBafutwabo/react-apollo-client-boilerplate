@@ -133,6 +133,16 @@ this folder contains all of your storybook components. For more information on s
 ## Running the `scripts` command
 
 
+		start: starts the application
+		build: generate a production-ready `build` folder in your root folder
+		test: run an overall test based on every test file contained in the project
+		lint: lintify all of the `.ts`and `.tsx` files based on our `.eslintrc` file
+		gen: generate TypeScript typings out of your GraphQL schema
+		extract: extracts all the texts that are not in the translation files and add them
+		storybook: starts the storybook server/app
+		
+
+
 ## Contributing
 
 To contribute to <project_name>, follow these steps:
