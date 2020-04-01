@@ -1,0 +1,875 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Button Emoji 1`] = `
+<div
+  className="ant-card ant-card-bordered"
+  style={
+    Object {
+      "margin": "auto",
+      "marginTop": 100,
+      "textAlign": "center",
+      "width": "50%",
+    }
+  }
+>
+  <div
+    className="ant-card-body"
+    style={Object {}}
+  >
+    <button
+      className="ant-btn sc-AxirZ jrUfGx"
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        aria-label="so cool"
+        role="img"
+      >
+        😀 😎 👍 💯
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Loading 1`] = `
+<div
+  className="ant-card ant-card-bordered"
+  style={
+    Object {
+      "margin": "auto",
+      "marginTop": 100,
+      "textAlign": "center",
+      "width": "50%",
+    }
+  }
+>
+  <div
+    className="ant-card-body"
+    style={Object {}}
+  >
+    <button
+      className="ant-btn sc-AxirZ jrUfGx"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="ant-spin ant-spin-spinning"
+      >
+        <span
+          className="ant-spin-dot ant-spin-dot-spin"
+        >
+          <i
+            className="ant-spin-dot-item"
+          />
+          <i
+            className="ant-spin-dot-item"
+          />
+          <i
+            className="ant-spin-dot-item"
+          />
+          <i
+            className="ant-spin-dot-item"
+          />
+        </span>
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Text 1`] = `
+<div
+  className="ant-card ant-card-bordered"
+  style={
+    Object {
+      "margin": "auto",
+      "marginTop": 100,
+      "textAlign": "center",
+      "width": "50%",
+    }
+  }
+>
+  <div
+    className="ant-card-body"
+    style={Object {}}
+  >
+    <button
+      className="ant-btn sc-AxirZ jrUfGx"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        Hello World
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Image React Logo Size 250 1`] = `
+<div
+  className="ant-card ant-card-bordered"
+  style={
+    Object {
+      "margin": "auto",
+      "marginTop": 100,
+      "textAlign": "center",
+      "width": "50%",
+    }
+  }
+>
+  <div
+    className="ant-card-body"
+    style={Object {}}
+  >
+    <img
+      alt="logo"
+      className="sc-AxjAm jYMWUG"
+      src="logo.svg"
+      width="250"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Image React Logo Size 500 1`] = `
+<div
+  className="ant-card ant-card-bordered"
+  style={
+    Object {
+      "margin": "auto",
+      "marginTop": 100,
+      "textAlign": "center",
+      "width": "50%",
+    }
+  }
+>
+  <div
+    className="ant-card-body"
+    style={Object {}}
+  >
+    <img
+      alt="logo"
+      className="sc-AxjAm jYpvqk"
+      src="logo.svg"
+      width="500"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Task Archived 1`] = `
+<div
+  className="ant-card ant-card-bordered"
+  style={
+    Object {
+      "margin": "auto",
+      "marginTop": 200,
+      "width": "50%",
+    }
+  }
+>
+  <div
+    className="ant-card-body"
+    style={Object {}}
+  >
+    <div
+      className="list-item"
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <label
+        className="ant-checkbox-wrapper ant-checkbox-wrapper-checked"
+      >
+        <span
+          className="ant-checkbox ant-checkbox-checked"
+          style={Object {}}
+        >
+          <input
+            checked={true}
+            className="ant-checkbox-input"
+            id="Test Task"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="ant-checkbox-inner"
+          />
+        </span>
+        <span>
+          Test Task
+        </span>
+      </label>
+      <div
+        onClick={[Function]}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Task Default 1`] = `
+<div
+  className="ant-card ant-card-bordered"
+  style={
+    Object {
+      "margin": "auto",
+      "marginTop": 200,
+      "width": "50%",
+    }
+  }
+>
+  <div
+    className="ant-card-body"
+    style={Object {}}
+  >
+    <div
+      className="list-item"
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <label
+        className="ant-checkbox-wrapper"
+      >
+        <span
+          className="ant-checkbox"
+          style={Object {}}
+        >
+          <input
+            checked={false}
+            className="ant-checkbox-input"
+            id="Test Task"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="ant-checkbox-inner"
+          />
+        </span>
+        <span>
+          Test Task
+        </span>
+      </label>
+      <div
+        onClick={[Function]}
+      >
+        <a
+          onClick={[Function]}
+        >
+          <span
+            aria-label="star"
+            className="anticon anticon-star"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="star"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 00.6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0046.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3zM664.8 561.6l36.1 210.3L512 672.7 323.1 772l36.1-210.3-152.8-149L417.6 382 512 190.7 606.4 382l211.2 30.7-152.8 148.9z"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Task List Empty 1`] = `
+<div
+  className="ant-card ant-card-bordered"
+  style={
+    Object {
+      "margin": "auto",
+      "marginTop": 200,
+      "width": "50%",
+    }
+  }
+>
+  <div
+    className="ant-card-body"
+    style={Object {}}
+  >
+    <div>
+      <div
+        className="ant-empty ant-empty-normal"
+      >
+        <div
+          className="ant-empty-image"
+        >
+          <svg
+            className="ant-empty-img-simple"
+            height="41"
+            viewBox="0 0 64 41"
+            width="64"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              fill="none"
+              fillRule="evenodd"
+              transform="translate(0 1)"
+            >
+              <ellipse
+                className="ant-empty-img-simple-ellipse"
+                cx="32"
+                cy="33"
+                rx="32"
+                ry="7"
+              />
+              <g
+                className="ant-empty-img-simple-g"
+                fillRule="nonzero"
+              >
+                <path
+                  d="M55 12.76L44.854 1.258C44.367.474 43.656 0 42.907 0H21.093c-.749 0-1.46.474-1.947 1.257L9 12.761V22h46v-9.24z"
+                />
+                <path
+                  className="ant-empty-img-simple-path"
+                  d="M41.613 15.931c0-1.605.994-2.93 2.227-2.931H55v18.137C55 33.26 53.68 35 52.05 35h-40.1C10.32 35 9 33.259 9 31.137V13h11.16c1.233 0 2.227 1.323 2.227 2.928v.022c0 1.605 1.005 2.901 2.237 2.901h14.752c1.232 0 2.237-1.308 2.237-2.913v-.007z"
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <p
+          className="ant-empty-description"
+        >
+          <span>
+            Yay You Have no Tasks!! Sit back and relax
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Task List Loading 1`] = `
+<div
+  className="ant-card ant-card-bordered"
+  style={
+    Object {
+      "margin": "auto",
+      "marginTop": 200,
+      "width": "50%",
+    }
+  }
+>
+  <div
+    className="ant-card-body"
+    style={Object {}}
+  >
+    <div>
+      <div
+        className="ant-skeleton ant-skeleton-active"
+      >
+        <div
+          className="ant-skeleton-content"
+        >
+          <h3
+            className="ant-skeleton-title"
+            style={
+              Object {
+                "width": "38%",
+              }
+            }
+          />
+          <ul
+            className="ant-skeleton-paragraph"
+          >
+            <li
+              style={
+                Object {
+                  "width": undefined,
+                }
+              }
+            />
+            <li
+              style={
+                Object {
+                  "width": undefined,
+                }
+              }
+            />
+            <li
+              style={
+                Object {
+                  "width": "61%",
+                }
+              }
+            />
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Task List With Pinned Tasks 1`] = `
+<div
+  className="ant-card ant-card-bordered"
+  style={
+    Object {
+      "margin": "auto",
+      "marginTop": 200,
+      "width": "50%",
+    }
+  }
+>
+  <div
+    className="ant-card-body"
+    style={Object {}}
+  >
+    <div>
+      <div
+        className="list-item"
+        style={
+          Object {
+            "display": "flex",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <label
+          className="ant-checkbox-wrapper ant-checkbox-wrapper-checked"
+        >
+          <span
+            className="ant-checkbox ant-checkbox-checked"
+            style={Object {}}
+          >
+            <input
+              checked={true}
+              className="ant-checkbox-input"
+              id="eat"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="ant-checkbox-inner"
+            />
+          </span>
+          <span>
+            eat
+          </span>
+        </label>
+        <div
+          onClick={[Function]}
+        />
+      </div>
+      <div
+        className="list-item"
+        style={
+          Object {
+            "display": "flex",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <label
+          className="ant-checkbox-wrapper"
+        >
+          <span
+            className="ant-checkbox"
+            style={Object {}}
+          >
+            <input
+              checked={false}
+              className="ant-checkbox-input"
+              id="code"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="ant-checkbox-inner"
+            />
+          </span>
+          <span>
+            code
+          </span>
+        </label>
+        <div
+          onClick={[Function]}
+        >
+          <a
+            onClick={[Function]}
+          >
+            <span
+              aria-label="star"
+              className="anticon anticon-star"
+              role="img"
+              style={
+                Object {
+                  "color": "#ffc300",
+                }
+              }
+            >
+              <svg
+                aria-hidden="true"
+                className=""
+                data-icon="star"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 00.6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0046.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="list-item"
+        style={
+          Object {
+            "display": "flex",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <label
+          className="ant-checkbox-wrapper"
+        >
+          <span
+            className="ant-checkbox"
+            style={Object {}}
+          >
+            <input
+              checked={false}
+              className="ant-checkbox-input"
+              id="sleep"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="ant-checkbox-inner"
+            />
+          </span>
+          <span>
+            sleep
+          </span>
+        </label>
+        <div
+          onClick={[Function]}
+        >
+          <a
+            onClick={[Function]}
+          >
+            <span
+              aria-label="star"
+              className="anticon anticon-star"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                className=""
+                data-icon="star"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 00.6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0046.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3zM664.8 561.6l36.1 210.3L512 672.7 323.1 772l36.1-210.3-152.8-149L417.6 382 512 190.7 606.4 382l211.2 30.7-152.8 148.9z"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Task Pinned 1`] = `
+<div
+  className="ant-card ant-card-bordered"
+  style={
+    Object {
+      "margin": "auto",
+      "marginTop": 200,
+      "width": "50%",
+    }
+  }
+>
+  <div
+    className="ant-card-body"
+    style={Object {}}
+  >
+    <div
+      className="list-item"
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <label
+        className="ant-checkbox-wrapper"
+      >
+        <span
+          className="ant-checkbox"
+          style={Object {}}
+        >
+          <input
+            checked={false}
+            className="ant-checkbox-input"
+            id="Test Task"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="ant-checkbox-inner"
+          />
+        </span>
+        <span>
+          Test Task
+        </span>
+      </label>
+      <div
+        onClick={[Function]}
+      >
+        <a
+          onClick={[Function]}
+        >
+          <span
+            aria-label="star"
+            className="anticon anticon-star"
+            role="img"
+            style={
+              Object {
+                "color": "#ffc300",
+              }
+            }
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="star"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 00.6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0046.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Welcome to Storybook 1`] = `
+<article
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "color": "#000",
+      "fontFamily": "\\"Helvetica Neue\\", Helvetica, \\"Segoe UI\\", Arial, freesans, sans-serif",
+      "lineHeight": 1.4,
+      "padding": 15,
+    }
+  }
+>
+  <h1>
+    Welcome to storybook
+  </h1>
+  <p>
+    This is a UI component dev environment for your app.
+  </p>
+  <p>
+    We've added some basic stories inside the 
+    <code
+      style={
+        Object {
+          "backgroundColor": "#f3f2f2",
+          "border": "1px solid #eae9e9",
+          "borderRadius": 4,
+          "color": "#3a3a3a",
+          "fontSize": 15,
+          "fontWeight": 600,
+          "padding": "2px 5px",
+        }
+      }
+    >
+      src/stories
+    </code>
+     directory.
+    <br />
+    A story is a single state of one or more UI components. You can have as many stories as you want.
+    <br />
+    (Basically a story is like a visual test case.)
+  </p>
+  <p>
+    See these sample 
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "borderBottom": "1px solid #1474f3",
+          "borderLeft": "none",
+          "borderRight": "none",
+          "borderTop": "none",
+          "color": "#1474f3",
+          "cursor": "pointer",
+          "font": "inherit",
+          "padding": 0,
+          "paddingBottom": 2,
+          "textDecoration": "none",
+        }
+      }
+      type="button"
+    >
+      stories
+    </button>
+     for a component called 
+    <code
+      style={
+        Object {
+          "backgroundColor": "#f3f2f2",
+          "border": "1px solid #eae9e9",
+          "borderRadius": 4,
+          "color": "#3a3a3a",
+          "fontSize": 15,
+          "fontWeight": 600,
+          "padding": "2px 5px",
+        }
+      }
+    >
+      Button
+    </code>
+    .
+  </p>
+  <p>
+    Just like that, you can add your own components as stories.
+    <br />
+    You can also edit those components and see changes right away.
+    <br />
+    (Try editing the 
+    <code
+      style={
+        Object {
+          "backgroundColor": "#f3f2f2",
+          "border": "1px solid #eae9e9",
+          "borderRadius": 4,
+          "color": "#3a3a3a",
+          "fontSize": 15,
+          "fontWeight": 600,
+          "padding": "2px 5px",
+        }
+      }
+    >
+      Button
+    </code>
+     stories located at 
+    <code
+      style={
+        Object {
+          "backgroundColor": "#f3f2f2",
+          "border": "1px solid #eae9e9",
+          "borderRadius": 4,
+          "color": "#3a3a3a",
+          "fontSize": 15,
+          "fontWeight": 600,
+          "padding": "2px 5px",
+        }
+      }
+    >
+      src/stories/1-Button.stories.js
+    </code>
+    .)
+  </p>
+  <p>
+    Usually we create stories with smaller UI components in the app.
+    <br />
+    Have a look at the 
+    <a
+      href="https://storybook.js.org/basics/writing-stories"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "borderBottom": "1px solid #1474f3",
+          "color": "#1474f3",
+          "paddingBottom": 2,
+          "textDecoration": "none",
+        }
+      }
+      target="_blank"
+    >
+      Writing Stories
+    </a>
+     section in our documentation.
+  </p>
+  <p
+    style={
+      Object {
+        "opacity": 0.5,
+      }
+    }
+  >
+    <b>
+      NOTE:
+    </b>
+    <br />
+    Have a look at the 
+    <code
+      style={
+        Object {
+          "backgroundColor": "#f3f2f2",
+          "border": "1px solid #eae9e9",
+          "borderRadius": 4,
+          "color": "#3a3a3a",
+          "fontSize": 15,
+          "fontWeight": 600,
+          "padding": "2px 5px",
+        }
+      }
+    >
+      .storybook/webpack.config.js
+    </code>
+     to add webpack loaders and plugins you are using in this project.
+  </p>
+</article>
+`;

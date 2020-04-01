@@ -1,0 +1,3 @@
+{
+    "plugins": ["macros", "require-context-hook", "graphql" ]
+}

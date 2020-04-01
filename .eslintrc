@@ -1,0 +1,60 @@
+{
+    "extends": ["airbnb", "plugin:prettier/recommended", "prettier/react", "eslint-config-prettier"],
+    "plugins": ["@typescript-eslint", "prettier", "eslint-plugin-prettier", "graphql"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "jest": true,
+        "node": true
+    },
+    "rules": {
+        "graphql/template-strings": ["error", {
+            "env": "apollo",
+            "validators": [
+                "KnownFragmentNames",
+                "NoUnusedFragments",
+                "NoUnusedVariables",
+                "FieldsOnCorrectType",
+                "FragmentsOnCompositeTypes"
+            ],
+            "schemaJsonFilepath": "./introspection.json"
+        }],
+        "graphql/named-operations": ["error", {
+            "env": "apollo",
+            "schemaJsonFilepath": "./introspection.json"
+        }],
+        "import/no-unresolved": 0,
+        "import/extensions": ["warn", "never"],
+        "react/prop-types": [0],
+        "camelcase":"off",
+        "import/no-extraneous-dependencies": [
+            "warn",
+            {
+                "devDependencies": ["**/spec.tsx", "**/spec.ts"]
+            }
+        ],
+        "react/jsx-filename-extension": [
+            "warn",
+            {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        ],
+        "max-len": [
+            "warn",
+            {
+                "code": 93,
+                "tabWidth": 4,
+                "ignoreComments": false,
+                "ignoreUrls": true,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true,
+                "ignoreRegExpLiterals": true
+            }
+        ]
+    }
+}

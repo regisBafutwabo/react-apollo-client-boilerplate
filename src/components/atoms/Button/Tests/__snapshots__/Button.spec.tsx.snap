@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component renders if Text props is filled with a span emojis 1`] = `
+<Styled(Button)>
+  <span
+    aria-label="so cool"
+    role="img"
+  >
+    😀 😎 👍 💯
+  </span>
+</Styled(Button)>
+`;
+
+exports[`Button component renders if Text props is provided 1`] = `
+<Styled(Button)>
+  hello
+</Styled(Button)>
+`;
+
+exports[`Button component should render if Text props is filled with emojis 1`] = `
+<Styled(Button)>
+  😀 😎 👍 💯
+</Styled(Button)>
+`;
+
+exports[`Button component should render if Text props is not provided 1`] = `<Styled(Button) />`;
