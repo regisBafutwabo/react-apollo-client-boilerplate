@@ -31,7 +31,7 @@ In order to use this template, you should have a basic understanding of React an
 	3. yarn
 	4. Modify the  `./.graphqlrc.yml` file as follows:
 
-![./.graphqlrc.yml](docs/noAPI_graphqlrc_modification.png)
+<img src="docs/noAPI_graphqlrc_modification.png" alt="./.graphqlrc.yml" width="80%"/>
 
      5. yarn gen
      6. yarn start
@@ -54,7 +54,8 @@ In order to use this template, you should have a basic understanding of React an
 
 	4. Modify `src/apollo/state/**/*.schema.ts`: every `*.schema.ts` file in the apollo/state subfolders as follows:
 
-![./src/apollo/state/i18n/i18n.schema.ts](docs/Hasura_schema_definition.png)
+<img src="docs/Hasura_schema_definition.png" alt="./src/apollo/state/i18n/i18n.schema.ts"/>
+
 
 	5. yarn gen
 	6. yarn start
