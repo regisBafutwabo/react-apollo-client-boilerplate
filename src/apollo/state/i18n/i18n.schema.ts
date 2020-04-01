@@ -5,11 +5,11 @@ export default gql`
         lng: String!
     }
 
-    type Query {
+    type query_root {
         i18n: I18n!
     }
 
-    type Mutation {
+    type mutation_root {
         i18nUpdateLanguage(language: String!): Boolean
     }
 

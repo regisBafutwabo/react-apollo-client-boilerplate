@@ -4,18 +4,23 @@ A React-typescript configuration template for projects using apollo client as th
 
 ## Table of Contents
 
-- [Prerequisites](#prerequisites)
-- [Running the Boilerplate](#running-the-boilerplate)
-- [`.env` Configuration](#env-configuration)
-- [Features](#features)
-- [Folder Structure](#folder-structure)
-- [Setup Explanation](#setup-explanation)
-    - [apollo](#apollo)
-    - [components](#components)
-    - [locales](#locales)
-    - [stories](#stories)
-- [Running the `scripts` command](#running-the-scripts-command)
-- [Contributing](#contributing)
+- [React Boilerplate with Typescript and Apollo Client](#react-boilerplate-with-typescript-and-apollo-client)
+	- [Table of Contents](#table-of-contents)
+	- [Prerequisites](#prerequisites)
+	- [Running the Boilerplate](#running-the-boilerplate)
+	- [Running the Boilerplate **with NO GraphQL API!!**](#running-the-boilerplate-with-no-graphql-api)
+	- [Running the Boilerplate **with a GraphQL API!!**](#running-the-boilerplate-with-a-graphql-api)
+	- [Running the Boilerplate **with a Hasura API!!**](#running-the-boilerplate-with-a-hasura-api)
+	- [`.env` Configuration](#env-configuration)
+	- [Features](#features)
+	- [Folder Structure](#folder-structure)
+	- [Setup Explanation](#setup-explanation)
+		- [apollo](#apollo)
+		- [components](#components)
+		- [locales](#locales)
+		- [stories](#stories)
+	- [Running the `scripts` command](#running-the-scripts-command)
+	- [Contributing](#contributing)
 
 <a name="Prerequisite"></a>
 ## Prerequisites
@@ -64,11 +69,11 @@ Each of those use cases require some settings before running `yarn start`. Those
 
 	4. Modify `src/apollo/state/**/*.schema.ts`: every `*.schema.ts` file in the apollo/state subfolders as follows:
 
-<img src="docs/Hasura_schema_definition.png" alt="./src/apollo/state/i18n/i18n.schema.ts"/>
+<img src="docs/hasura_schema.png" alt="./src/apollo/state/i18n/i18n.schema.ts"/>
 
 
-	5. yarn gen
-	6. yarn start
+	1. yarn gen
+	2. yarn start
 
 
 <a name="env"></a>
@@ -90,7 +95,9 @@ By now, I think you have realized that the apollo folder relies on some kind of 
 
 		REACT_APP_GRAPHQL_ADMIN_SECRET = 1234
 	
+
 <a name="feat"></a>
+
 ## Features
 
 - **Typescript** - A superset of Javascript providing static typing, classes and interfaces.
@@ -104,8 +111,12 @@ By now, I think you have realized that the apollo folder relies on some kind of 
 - **Test** - Testing support for React based and apollo client.
 - **Storybook** - Enables developers to test UI components in isolation
 - **Hasura Connection** - Used to setup a connection a hasura server.
+
+
 <a name="folder"></a>
+
 ## Folder Structure
+
 This is a setup of the `src` folder structure:
 		 
 		 src/
