@@ -24,7 +24,19 @@ In order to use this template, you should have a basic understanding of React an
 
 <a name="run"></a>
 
-## Running the Boilerplate **with a GraphQL API setup!!**
+## Running the Boilerplate **with NO GraphQL API!!**
+
+	1. git clone https://github.com/regisBafutwabo/react-typescript-boilerplate.git <YOUR PROJECT NAME>
+	2. cd <YOUR PROJECT NAME>
+	3. yarn
+	4. Modify the  `./.graphqlrc.yml` file as follows:
+
+![./.graphqlrc.yml](docs/noAPI_graphqlrc_modification.png)
+
+     5. yarn gen
+     6. yarn start
+
+## Running the Boilerplate **with a GraphQL API!!**
 
 	1. git clone https://github.com/regisBafutwabo/react-typescript-boilerplate.git <YOUR PROJECT NAME>
 	2. cd <YOUR PROJECT NAME>
@@ -33,18 +45,19 @@ In order to use this template, you should have a basic understanding of React an
 	5. yarn gen
 	6. yarn start
 
-## Running the Boilerplate **with NO GraphQL API setup!!**
 
-	1. git clone https://github.com/regisBafutwabo/react-typescript-boilerplate.git <YOUR PROJECT NAME>
+## Running the Boilerplate **with a Hasura API!!**
+
+    1. git clone https://github.com/regisBafutwabo/react-typescript-boilerplate.git <YOUR PROJECT NAME>
 	2. cd <YOUR PROJECT NAME>
 	3. yarn
 
-You will have to modify some of the files such as:
+	4. Modify `src/apollo/state/**/*.schema.ts`: every `*.schema.ts` file in the apollo/state subfolders as follows:
 
-- `./.graphqlrc.yml`: the codegen configuration file
-- `src/apollo/state/**/*.schema.ts`: every `*.schema.ts` file in the apollo/state folder
+![./src/apollo/state/i18n/i18n.schema.ts](docs/Hasura_schema_definition.png)
 
-
+	5. yarn gen
+	6. yarn start
 
 
 <a name="env"></a>
