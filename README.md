@@ -4,18 +4,18 @@ A React-typescript configuration template for projects using apollo client as th
 
 ## Table of Contents
 
-	- [Prerequisites](#prerequisites)
-	- [Running the Boilerplate](#running-the-boilerplate)
-	- [`.env` Configuration](#env-configuration)
-	- [Features](#features)
-	- [Folder Structure](#folder-structure)
-	- [Setup Explanation](#setup-explanation)
-		- [apollo](#apollo)
-		- [components](#components)
-		- [locales](#locales)
-		- [stories](#stories)
-	- [Running the `scripts` command](#running-the-scripts-command)
-	- [Contributing](#contributing)
+- [Prerequisites](#prerequisites)
+- [Running the Boilerplate](#running-the-boilerplate)
+- [`.env` Configuration](#env-configuration)
+- [Features](#features)
+- [Folder Structure](#folder-structure)
+- [Setup Explanation](#setup-explanation)
+    - [apollo](#apollo)
+    - [components](#components)
+    - [locales](#locales)
+    - [stories](#stories)
+- [Running the `scripts` command](#running-the-scripts-command)
+- [Contributing](#contributing)
 
 <a name="Prerequisite"></a>
 ## Prerequisites
@@ -180,7 +180,7 @@ this folder contains all of your storybook components. For more information on s
 		storybook: starts the storybook server/app
 		
 
-
+<a name="scripts"></a>
 ## Contributing
 
 To contribute to <project_name>, follow these steps:
