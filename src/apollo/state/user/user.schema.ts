@@ -5,11 +5,11 @@ export default gql`
         isLoggedIn: Boolean!
     }
 
-    type query_root {
+    extend type Query {
         localUser: LocalUser!
     }
 
-    type mutation_root {
+    extend type Mutation {
         localUpdateUser(isLoggedIn: Boolean!): Boolean
         signOut: Boolean
     }

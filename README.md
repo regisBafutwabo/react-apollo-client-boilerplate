@@ -3,8 +3,7 @@
 A React-typescript configuration template for projects using apollo client as their state management with a connection to a Graphql server.
 
 ## Table of Contents
-- [React Boilerplate with Typescript and Apollo Client](#react-boilerplate-with-typescript-and-apollo-client)
-	- [Table of Contents](#table-of-contents)
+
 	- [Prerequisites](#prerequisites)
 	- [Running the Boilerplate](#running-the-boilerplate)
 	- [`.env` Configuration](#env-configuration)
@@ -24,12 +23,29 @@ A React-typescript configuration template for projects using apollo client as th
 In order to use this template, you should have a basic understanding of React and Apollo Client.
 
 <a name="run"></a>
-## Running the Boilerplate
+
+## Running the Boilerplate **with a GraphQL API setup!!**
 
 	1. git clone https://github.com/regisBafutwabo/react-typescript-boilerplate.git <YOUR PROJECT NAME>
 	2. cd <YOUR PROJECT NAME>
 	3. yarn
-	4. yarn start
+	4. setup the .env with the API configurations as shown in the next section
+	5. yarn gen
+	6. yarn start
+
+## Running the Boilerplate **with NO GraphQL API setup!!**
+
+	1. git clone https://github.com/regisBafutwabo/react-typescript-boilerplate.git <YOUR PROJECT NAME>
+	2. cd <YOUR PROJECT NAME>
+	3. yarn
+
+You will have to modify some of the files such as:
+
+- `./.graphqlrc.yml`: the codegen configuration file
+- `src/apollo/state/**/*.schema.ts`: every `*.schema.ts` file in the apollo/state folder
+
+
+
 
 <a name="env"></a>
 ## `.env` Configuration

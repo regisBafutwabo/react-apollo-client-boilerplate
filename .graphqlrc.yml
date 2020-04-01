@@ -1,8 +1,7 @@
 schema:
-  - '${REACT_APP_GRAPHQL_PROTOCOL}://${REACT_APP_GRAPHQL_HOST}:${REACT_APP_GRAPHQL_PORT}/${REACT_APP_GRAPHQL_VERSION}/${REACT_APP_GRAPHQL_ROUTE}':
-      headers:
-        x-hasura-admin-secret: '${REACT_APP_GRAPHQL_ADMIN_SECRET}'
   - '**/*.schema.ts'
+  - '${REACT_APP_GRAPHQL_PROTOCOL}://${REACT_APP_GRAPHQL_HOST}:${REACT_APP_GRAPHQL_PORT}/${REACT_APP_GRAPHQL_ROUTE}'
+  
 documents: '**/*.queries.ts'
 extensions:
   codegen:
