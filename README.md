@@ -46,7 +46,7 @@ Each of those use cases require some settings before running `yarn start`. Those
 	4. yarn (or npm i )
 	5. comment or remove the lines in the `.graphqlrc.yml` file located in the root folder as follows(check out the red rectangles):
 
-<img src="docs/noAPI_graphqlrc_modification.png" alt="./.graphqlrc.yml" width="80%"/>
+<img src="docs/noApi.png" alt="./.graphqlrc.yml"/>
 
      6. yarn gen (or npm run gen)
      7. yarn start (or npm start)
