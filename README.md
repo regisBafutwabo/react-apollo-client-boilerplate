@@ -86,7 +86,7 @@ Each of those use cases require some settings before running `yarn start`. Those
     
 	5. Modify `src/apollo/state/**/*.schema.ts`: every `*.schema.ts` file in the apollo/state subfolders as follows:
 
-<img src="docs/hasura_schema.png" alt="./src/apollo/state/i18n/i18n.schema.ts"/>
+<img src="https://raw.githubusercontent.com/regisBafutwabo/react-typescript-boilerplate/master/docs/hasura_schema.png" alt="./src/apollo/state/i18n/i18n.schema.ts"/>
 
 
 	6. yarn gen (or npm run gen)
