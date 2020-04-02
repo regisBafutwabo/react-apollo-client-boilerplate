@@ -103,16 +103,16 @@ By now, I think you have realized that the apollo folder relies on some kind of 
 ## Features
 
 - **Typescript** - A superset of Javascript providing static typing, classes and interfaces.
-- **Apollo Client** - A fully-featured caching GraphQL client with integrations for React which allows you to easily build UI components that fetch data via GraphQL.
+- **Apollo Client** - A fully-featured caching GraphQL client with integrations for React which allows you to easily build UI components that fetch data via GraphQL.[Learn More](https://www.apollographql.com/docs/react/)
 - **Apollo Cache Persist** - Utilizes async storage to persist and rehydrate the Apollo store
 - **React Router DOM** - A collection of navigational components that compose declaratively with your application.
-- **Styled Components** - Powerful CSS in JS module providing template literals to support dynamic styling.
-- **Ant Design** - An enterprise-class UI _design_ language and React UI library with a set of high-quality React components, one of best React UI library for enterprises.
+- **Styled Components** - Powerful CSS in JS module providing template literals to support dynamic styling.[Learn More](https://styled-components.com/)
+- **Ant Design** - An enterprise-class UI _design_ language and React UI library with a set of high-quality React components, one of best React UI library for enterprises.[Learn More](https://ant.design/)
 - **EsLint/Prettier/Airbnb linting style** - Enforces code styling, and standards. Airbnb's tslint guidelines are followed by default.
-- **React-i18next** - A powerful internationalization framework for React based on i18next.
-- **Test** - Testing support for React based and apollo client.
-- **Storybook** - Enables developers to test UI components in isolation
-- **Hasura Connection** - Used to setup a connection a hasura server.
+- **React-i18next** - A powerful internationalization framework for React based on i18next.[Learn More](https://react.i18next.com/)
+- **Test** - Testing support for React and apollo client.
+- **Storybook** - Enables developers to test UI components in isolation.[Learn More](https://storybook.js.org/)
+- **Server Connection** - Used to setup a connection a hasura or GraphQL API server.[Learn More on Hasura](https://hasura.io/)
 
 
 <a name="folder"></a>
@@ -203,6 +203,7 @@ this folder contains all of your storybook components. For more information on s
 
 <a name="contributing"></a>
 ## Contributing
+You are welcome to add a feature or improve this boilerplate since I believe that there is multiple ways to use these tools.
 
 To contribute to <project_name>, follow these steps:
 
