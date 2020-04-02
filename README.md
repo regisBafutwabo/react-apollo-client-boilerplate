@@ -50,7 +50,7 @@ Each of those use cases require some settings before running `yarn start`. Those
     
 	5. comment or remove the lines in the `.graphqlrc.yml` file located in the root folder as follows(check out the red rectangles):
 
-<img src="docs/noApi.png" alt="./.graphqlrc.yml"/>
+<img src="https://raw.githubusercontent.com/regisBafutwabo/react-typescript-boilerplate/master/docs/noApi.png" alt="./.graphqlrc.yml"/>
 
      6. yarn gen (or npm run gen)
      
