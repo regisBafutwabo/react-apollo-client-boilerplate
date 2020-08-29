@@ -1,3 +1,5 @@
+<img src="https://i.ibb.co/wCr7NNT/react-apollo.png" style="text-align:center"/>
+
 # React Boilerplate with Typescript and Apollo Client
 
 A React-typescript configuration template for projects using apollo client as their state management with a connection to a Graphql server.
