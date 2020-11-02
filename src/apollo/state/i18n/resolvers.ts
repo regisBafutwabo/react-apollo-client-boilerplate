@@ -5,7 +5,7 @@
 import ApolloClient, { Resolvers } from "apollo-client";
 import { InMemoryCache } from "apollo-cache-inmemory";
 import { I18n, I18nUpdateLanguageMutationVariables } from "generated/graphql";
-import { ClIENT_LANGUAGE } from "./i18n.queries";
+import { CLIENT_LANGUAGE } from "./i18n.queries";
 
 export const i18nResolvers: Resolvers = {
     Mutation: {
@@ -19,7 +19,7 @@ export const i18nResolvers: Resolvers = {
             const i18nState: I18n | undefined = client.readQuery<{
                 i18n: I18n;
             }>({
-                query: ClIENT_LANGUAGE,
+                query: CLIENT_LANGUAGE,
             })?.i18n;
             client.writeData({
                 data: {

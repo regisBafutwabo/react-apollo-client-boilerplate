@@ -29,6 +29,8 @@
             "schemaJsonFilepath": "./introspection.json"
         }],
         "import/no-unresolved": 0,
+        "no-unused-vars": 0,
+        "import/prefer-default-export": 0,
         "import/extensions": ["warn", "never"],
         "react/prop-types": [0],
         "camelcase":"off",

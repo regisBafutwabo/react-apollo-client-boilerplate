@@ -1,4 +1,4 @@
-import { ApolloLink } from "apollo-link";
+import { ApolloLink } from "@apollo/client";
 import serverLink from "./server";
 
 const link: ApolloLink = ApolloLink.from([serverLink]);

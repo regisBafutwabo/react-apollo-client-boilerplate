@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import gql from "graphql-tag";
 
-export const ClIENT_LANGUAGE = gql`
+export const CLIENT_LANGUAGE = gql`
     query i18n {
         i18n @client {
             lng

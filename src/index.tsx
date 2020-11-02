@@ -2,7 +2,6 @@
 import "react-app-polyfill/ie9";
 import "react-app-polyfill/stable";
 import React from "react";
-import { ApolloProvider } from "@apollo/react-hooks";
 import { hydrate, render } from "react-dom";
 import "./index.css";
 import { Router } from "react-router-dom";
@@ -11,6 +10,7 @@ import { createBrowserHistory } from "history";
 import createApolloClient from "apollo";
 import { I18nextProvider } from "react-i18next";
 import App from "app";
+import { ApolloProvider } from "@apollo/client";
 import * as serviceWorker from "./serviceWorker";
 import "antd/dist/antd.css";
 import "./storybook.css";
@@ -21,6 +21,7 @@ async function bootStrap() {
     const history = createBrowserHistory();
     // get the apollo client store
     const client = await createApolloClient();
+    console.log("object", client);
     // get the inital language from the store
     const i18n = await createI18n(client);
 

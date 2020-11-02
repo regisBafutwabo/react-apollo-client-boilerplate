@@ -4,6 +4,8 @@ import { Menu, Dropdown } from "antd";
 import { DownOutlined, TranslationOutlined } from "@ant-design/icons";
 import { useI18nUpdateLanguageMutation } from "generated/graphql";
 import { useTranslation } from "react-i18next";
+import { useMutation } from "@apollo/client";
+import { CLIENT_UPDATE_LANGUAGE } from "apollo/state/i18n";
 
 interface IProps {
     languages: string[];
@@ -12,7 +14,7 @@ interface IProps {
 const LanguageSelector = (props: IProps) => {
     const { languages } = props;
 
-    const [updateLanguage] = useI18nUpdateLanguageMutation();
+    const [updateLanguage] = useMutation(CLIENT_UPDATE_LANGUAGE);
     const { i18n } = useTranslation();
 
     const [visible, setVisible] = useState(false);

@@ -1,7 +1,7 @@
 /**
  * This file setup the connection to hasura server
  */
-import { HttpLink } from "apollo-link-http";
+import { HttpLink } from "@apollo/client";
 
 const protocol = process.env.REACT_APP_GRAPHQL_PROTOCOL;
 const host = process.env.REACT_APP_GRAPHQL_HOST;
