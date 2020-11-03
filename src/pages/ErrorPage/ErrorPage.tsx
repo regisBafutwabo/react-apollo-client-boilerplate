@@ -5,8 +5,9 @@ import { Button } from "antd";
 import { PageTitle } from "components/atoms";
 import { RouteComponentProps } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useQuery } from "@apollo/client";
+import { CLIENT_LANGUAGE } from "apollo/operations/i18n/queries/i18n.queries";
 import { Container, Result } from "./styles";
-import { useI18nQuery } from "../../generated/graphql";
 
 interface IProps extends RouteComponentProps {
     type: 403 | 404 | 500 | "403" | "404" | "500";
@@ -16,7 +17,7 @@ const ErrorPage: React.FC<IProps> = props => {
     const { type, history } = props;
     const { i18n } = useTranslation();
 
-    const { data: i18nLocal } = useI18nQuery();
+    const { data: i18nLocal } = useQuery(CLIENT_LANGUAGE);
     const lang = i18nLocal?.i18n?.lng;
 
     const unauth = "Sorry, you are not authorized to access this page.";

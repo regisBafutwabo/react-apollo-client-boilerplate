@@ -3,7 +3,7 @@ import React from "react";
 import { render } from "@testing-library/react";
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
-import { ApolloProvider } from "@apollo/react-hooks";
+import { ApolloProvider } from "@apollo/client";
 import createApolloClient from "apollo";
 import createI18n from "i18n";
 import { I18nextProvider } from "react-i18next";

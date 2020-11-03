@@ -5,7 +5,7 @@ import { DownOutlined, TranslationOutlined } from "@ant-design/icons";
 import { useI18nUpdateLanguageMutation } from "generated/graphql";
 import { useTranslation } from "react-i18next";
 import { useMutation } from "@apollo/client";
-import { CLIENT_UPDATE_LANGUAGE } from "apollo/state/i18n";
+import { CLIENT_UPDATE_LANGUAGE } from "apollo/operations/i18n/queries/i18n.queries";
 
 interface IProps {
     languages: string[];

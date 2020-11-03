@@ -10,7 +10,7 @@ export const CLIENT_LANGUAGE = gql`
 `;
 
 export const CLIENT_UPDATE_LANGUAGE = gql`
-    mutation i18nUpdateLanguage($language: String!) {
-        i18nUpdateLanguage(language: $language) @client
+    mutation updateLanguage($language: String!) {
+        updateLanguage(language: $language) @client
     }
 `;

@@ -1,6 +1,6 @@
 schema:
   - '**/*.schema.ts'
-  - '${REACT_APP_GRAPHQL_PROTOCOL}://${REACT_APP_GRAPHQL_HOST}:${REACT_APP_GRAPHQL_PORT}/${REACT_APP_GRAPHQL_ROUTE}'
+  # - '${REACT_APP_GRAPHQL_PROTOCOL}://${REACT_APP_GRAPHQL_HOST}:${REACT_APP_GRAPHQL_PORT}/${REACT_APP_GRAPHQL_ROUTE}'
   
 documents: '**/*.queries.ts'
 extensions:

@@ -2,10 +2,10 @@
 /* eslint-disable max-len */
 /* eslint-disable import/extensions */
 /* eslint-disable no-unused-vars */
-import { CLIENT_LANGUAGE } from "apollo/state/i18n/i18n.queries";
 import i18n, { InitOptions } from "i18next";
 import { initReactI18next } from "react-i18next";
 import { NormalizedCacheObject, ApolloClient } from "@apollo/client";
+import { CLIENT_LANGUAGE } from "./apollo/operations/i18n/queries/i18n.queries";
 import translationEN from "./locales/en/translation.json";
 import translationKR from "./locales/ko/translation.json";
 
