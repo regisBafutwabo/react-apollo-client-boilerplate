@@ -4,6 +4,8 @@
 import React from "react";
 import { cleanup, render } from "@testing-library/react";
 import { GraphQLError } from "graphql";
+import { ApolloProvider } from "@apollo/client";
+import createApolloClient from "apollo";
 import Header from "../Header";
 
 afterEach(cleanup);
@@ -14,35 +16,42 @@ const LogoutFn = jest.fn();
 describe("Header component", () => {
     // When data is available
     it(" should render with mocked data", async () => {
+        const client = await createApolloClient();
         const data = { localUser: { isLoggedIn: true } };
 
         const { debug } = render(
-            <Header
-                Login={LoginFn}
-                Logout={LogoutFn}
-                loading={false}
-                error={undefined}
-                data={data}
-            />,
+            <ApolloProvider client={client}>
+                <Header
+                    Login={LoginFn}
+                    Logout={LogoutFn}
+                    loading={false}
+                    error={undefined}
+                    data={data}
+                />
+            </ApolloProvider>,
         );
         debug();
     });
     // When data is not yet there but its loading...
     it(" should render in loading state", async () => {
+        const client = await createApolloClient();
         const { debug } = render(
-            <Header
-                Login={LoginFn}
-                Logout={LogoutFn}
-                loading
-                error={undefined}
-                data={undefined}
-            />,
+            <ApolloProvider client={client}>
+                <Header
+                    Login={LoginFn}
+                    Logout={LogoutFn}
+                    loading
+                    error={undefined}
+                    data={undefined}
+                />
+            </ApolloProvider>,
         );
         debug();
     });
 
     // When there is an error while fetching the data
     it(" should render with mocked error data", async () => {
+        const client = await createApolloClient();
         const errorMsg: GraphQLError[] = [
             {
                 message: "something went wrong",
@@ -58,19 +67,21 @@ describe("Header component", () => {
         ];
 
         const { debug } = render(
-            <Header
-                Login={LoginFn}
-                Logout={LogoutFn}
-                loading={false}
-                error={{
-                    message: "something went wrong",
-                    networkError: null,
-                    extraInfo: undefined,
-                    graphQLErrors: errorMsg,
-                    name: "error",
-                }}
-                data={undefined}
-            />,
+            <ApolloProvider client={client}>
+                <Header
+                    Login={LoginFn}
+                    Logout={LogoutFn}
+                    loading={false}
+                    error={{
+                        message: "something went wrong",
+                        networkError: null,
+                        extraInfo: undefined,
+                        graphQLErrors: errorMsg,
+                        name: "error",
+                    }}
+                    data={undefined}
+                />
+            </ApolloProvider>,
         );
         debug();
     });

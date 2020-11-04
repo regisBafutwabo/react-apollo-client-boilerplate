@@ -15,7 +15,7 @@ describe("App Component", () => {
         const history = createBrowserHistory();
         const client = await createApolloClient();
         const i18n = await createI18n(client);
-
+        console.log("client", i18n);
         const { getByText } = render(
             <ApolloProvider client={client}>
                 <I18nextProvider i18n={i18n}>
