@@ -10,8 +10,6 @@ A React-typescript configuration template for projects using apollo client as th
 	- [Table of Contents](#table-of-contents)
 	- [Prerequisites](#prerequisites)
 	- [Running the Boilerplate](#running-the-boilerplate)
-	- [Running the Boilerplate **with a GraphQL API!!**](#running-the-boilerplate-with-a-graphql-api)
-	- [Running the Boilerplate **with a Hasura API!!**](#running-the-boilerplate-with-a-hasura-api)
 	- [`.env` Configuration](#env-configuration)
 	- [Features](#features)
 	- [Folder Structure](#folder-structure)
