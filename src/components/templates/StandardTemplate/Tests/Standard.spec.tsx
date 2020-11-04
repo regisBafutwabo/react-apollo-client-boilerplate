@@ -2,7 +2,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from "react";
 import { render, wait } from "@testing-library/react";
-import { MockedProvider } from "@apollo/react-testing";
+import { MockedProvider } from "@apollo/client/testing";
 import {
     CLIENT_UPDATE_USER_STATE,
     CLIENT_GET_USER_STATE,

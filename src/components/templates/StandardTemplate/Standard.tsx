@@ -1,23 +1,27 @@
 import React from "react";
 import { Header } from "components/organisms";
-import { useLocalUpdateUserMutation, useLocalUserQuery } from "generated/graphql";
+// import { useLocalUpdateUserMutation } from "generated/graphql";
 
+import { useQuery, useMutation } from "@apollo/client";
+import { CLIENT_GET_USER_STATE } from "apollo/state/user";
 import { Container, Body } from "./styles";
+import { CLIENT_UPDATE_USER_STATE } from "../../../apollo/state/user/user.queries";
 
 const StandardTemplate: React.FC = (props: any) => {
     const { children } = props;
 
     // Check user status query
-    const { loading, error, data } = useLocalUserQuery();
+    const { loading, error, data } = useQuery(CLIENT_GET_USER_STATE);
+
     // call logout mutation
-    const [Logout] = useLocalUpdateUserMutation({
+    const [Logout] = useMutation(CLIENT_UPDATE_USER_STATE, {
         variables: { isLoggedIn: false },
     });
     // call login mutation
-    const [LogIn, { loading: loginLoader }] = useLocalUpdateUserMutation({
+    const [LogIn, { loading: loginLoader }] = useMutation(CLIENT_UPDATE_USER_STATE, {
         variables: { isLoggedIn: true },
     });
-
+    console.log("object");
     return (
         <Container>
             <Header

@@ -1,16 +1,12 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import {
-    createApolloErrorProvider,
-    createApolloMockedProvider,
-    createApolloLoadingProvider,
-} from "apollo-mocked-provider";
-import { ApolloProvider } from "@apollo/react-hooks";
+import { MockedProvider } from "@apollo/client/testing";
+import { ApolloProvider } from "@apollo/client";
 import typeDefs from "./typeDefs";
 
-export const ApolloMockedProvider = createApolloMockedProvider(typeDefs, {
-    provider: ApolloProvider,
-});
-export const ApolloErrorProvider = createApolloErrorProvider({ provider: ApolloProvider });
-export const ApolloLoadingProvider = createApolloLoadingProvider({
-    provider: ApolloProvider,
-});
+// export const ApolloMockedProvider = new MockedProvider(typeDefs, {
+//     provider: ApolloProvider,
+// });
+// export const ApolloErrorProvider = createApolloErrorProvider({ provider: ApolloProvider });
+// export const ApolloLoadingProvider = createApolloLoadingProvider({
+//     provider: ApolloProvider,
+// });

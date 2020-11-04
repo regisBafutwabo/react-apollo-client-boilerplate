@@ -3,7 +3,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from "react";
 import { cleanup, render } from "@testing-library/react";
-import { ApolloMockedProvider } from "utils/TestUtils/Providers/Providers";
 import { GraphQLError } from "graphql";
 import Header from "../Header";
 
@@ -18,30 +17,26 @@ describe("Header component", () => {
         const data = { localUser: { isLoggedIn: true } };
 
         const { debug } = render(
-            <ApolloMockedProvider>
-                <Header
-                    Login={LoginFn}
-                    Logout={LogoutFn}
-                    loading={false}
-                    error={undefined}
-                    data={data}
-                />
-            </ApolloMockedProvider>,
+            <Header
+                Login={LoginFn}
+                Logout={LogoutFn}
+                loading={false}
+                error={undefined}
+                data={data}
+            />,
         );
         debug();
     });
     // When data is not yet there but its loading...
     it(" should render in loading state", async () => {
         const { debug } = render(
-            <ApolloMockedProvider>
-                <Header
-                    Login={LoginFn}
-                    Logout={LogoutFn}
-                    loading
-                    error={undefined}
-                    data={undefined}
-                />
-            </ApolloMockedProvider>,
+            <Header
+                Login={LoginFn}
+                Logout={LogoutFn}
+                loading
+                error={undefined}
+                data={undefined}
+            />,
         );
         debug();
     });
@@ -63,21 +58,19 @@ describe("Header component", () => {
         ];
 
         const { debug } = render(
-            <ApolloMockedProvider>
-                <Header
-                    Login={LoginFn}
-                    Logout={LogoutFn}
-                    loading={false}
-                    error={{
-                        message: "something went wrong",
-                        networkError: null,
-                        extraInfo: undefined,
-                        graphQLErrors: errorMsg,
-                        name: "error",
-                    }}
-                    data={undefined}
-                />
-            </ApolloMockedProvider>,
+            <Header
+                Login={LoginFn}
+                Logout={LogoutFn}
+                loading={false}
+                error={{
+                    message: "something went wrong",
+                    networkError: null,
+                    extraInfo: undefined,
+                    graphQLErrors: errorMsg,
+                    name: "error",
+                }}
+                data={undefined}
+            />,
         );
         debug();
     });

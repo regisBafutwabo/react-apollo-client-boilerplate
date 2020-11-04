@@ -3,7 +3,6 @@
 import React from "react";
 import logo from "assets/app/logo.svg";
 import { useTranslation } from "react-i18next";
-
 import { Image, Loading } from "components/atoms";
 import { StandardTemplate } from "components/templates";
 import { RouteComponentProps } from "react-router-dom";
@@ -14,6 +13,7 @@ interface IProps extends RouteComponentProps {}
 
 const Welcome: React.FC<IProps> = () => {
     const { t, ready } = useTranslation("translation", { useSuspense: false });
+
     return (
         <StandardTemplate>
             <PageTitle Title="Welcome - React Boilerplate" />
