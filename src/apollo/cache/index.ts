@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { InMemoryCache } from "@apollo/client";
 import { persistCache, PersistentStorage } from "apollo3-cache-persist";
-import { LocalUser, I18n } from "generated/graphql";
 import { defaults } from "apollo/state";
 import { CLIENT_LANGUAGE } from "apollo/state/i18n/i18n.queries";
 import { CLIENT_GET_USER_STATE } from "../state/user/user.queries";

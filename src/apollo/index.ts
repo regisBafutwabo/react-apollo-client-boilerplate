@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { ApolloClient, NormalizedCacheObject, InMemoryCache } from "@apollo/client";
-import { errorLink } from "./Errorhandler";
-import link from "./middlewares";
+// import { errorLink } from "./Errorhandler";
+// import link from "./middlewares";
 import initCache from "./cache";
 import { resolvers } from "./state";
 /**

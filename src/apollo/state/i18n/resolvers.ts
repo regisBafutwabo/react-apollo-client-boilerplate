@@ -3,7 +3,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable import/prefer-default-export */
 import { InMemoryCache, Resolvers, ApolloClient } from "@apollo/client";
-import { I18n, I18nUpdateLanguageMutationVariables } from "generated/graphql";
+import { I18nUpdateLanguageMutationVariables } from "generated/graphql";
 import { CLIENT_LANGUAGE } from "./i18n.queries";
 
 export const i18nResolvers: Resolvers = {
