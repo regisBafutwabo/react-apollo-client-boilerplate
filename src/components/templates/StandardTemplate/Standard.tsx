@@ -21,7 +21,7 @@ const StandardTemplate: React.FC = (props: any) => {
     const [LogIn, { loading: loginLoader }] = useMutation(CLIENT_UPDATE_USER_STATE, {
         variables: { isLoggedIn: true },
     });
-    console.log("object");
+
     return (
         <Container>
             <Header

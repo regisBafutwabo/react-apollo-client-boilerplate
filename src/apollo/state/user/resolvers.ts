@@ -2,9 +2,8 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-unused-vars */
 /* eslint-disable import/prefer-default-export */
-import { LocalUser, LocalUpdateUserMutationVariables } from "generated/graphql";
-import { InMemoryCache } from "apollo-cache-inmemory";
-import ApolloClient, { Resolvers } from "apollo-client";
+import { LocalUpdateUserMutationVariables } from "generated/graphql";
+import { ApolloClient, Resolvers, InMemoryCache } from "@apollo/client";
 import { CLIENT_GET_USER_STATE } from "./user.queries";
 
 export const userStateResolvers: Resolvers = {
@@ -15,16 +14,11 @@ export const userStateResolvers: Resolvers = {
             context: any,
         ): null => {
             const client: ApolloClient<InMemoryCache> = context?.client;
-            const userState: LocalUser | undefined = client.readQuery<{
-                localUser: LocalUser;
-            }>({
-                query: CLIENT_GET_USER_STATE,
-            })?.localUser;
 
-            client.writeData({
+            client.writeQuery({
+                query: CLIENT_GET_USER_STATE,
                 data: {
                     localUser: {
-                        ...userState,
                         ...args,
                     },
                 },

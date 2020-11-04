@@ -4,7 +4,7 @@ import React from "react";
 import { Button, Loading } from "components/atoms";
 import { Alert } from "antd";
 import { LoggedIn, LanguageSelector } from "components/molecules";
-import { ApolloError } from "apollo-client";
+import { ApolloError } from "@apollo/client";
 import { LocalUserQuery } from "generated/graphql";
 import { useTranslation } from "react-i18next";
 import { Container } from "./styles";

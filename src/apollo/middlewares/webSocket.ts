@@ -1,7 +1,7 @@
 /**
  * This file is for setting up the web socket http link for subscriptions
  */
-import { WebSocketLink } from "apollo-link-ws";
+import { WebSocketLink } from "@apollo/client/link/ws";
 
 const protocol = process.env.REACT_APP_GRAPHQL_PROTOCOL;
 const host = process.env.REACT_APP_GRAPHQL_HOST;
