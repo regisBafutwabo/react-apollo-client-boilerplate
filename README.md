@@ -1,3 +1,5 @@
+<img src="https://i.ibb.co/wCr7NNT/react-apollo.png" style="text-align:center"/>
+
 # React Boilerplate with Typescript and Apollo Client
 
 A React-typescript configuration template for projects using apollo client as their state management with a connection to a Graphql server.
@@ -41,41 +43,57 @@ Each of those use cases require some settings before running `yarn start`. Those
 ## Running the Boilerplate **with NO GraphQL API!!**
 
 	1. git clone https://github.com/regisBafutwabo/react-typescript-boilerplate.git <YOUR PROJECT NAME>
+    
 	2. cd <YOUR PROJECT NAME>
+    
 	3. rm -rf .git : remove the git folder and initiate your own git ...
-	4. yarn
-	5. Modify the  `./.graphqlrc.yml` file as follows:
+    
+	4. yarn (or npm i )
+    
+	5. comment or remove the lines in the `.graphqlrc.yml` file located in the root folder as follows(check out the red rectangles):
 
-<img src="docs/noAPI_graphqlrc_modification.png" alt="./.graphqlrc.yml" width="80%"/>
+<img src="https://raw.githubusercontent.com/regisBafutwabo/react-typescript-boilerplate/master/docs/noApi.png" alt="./.graphqlrc.yml"/>
 
-     6. yarn gen
-     7. yarn start
+     6. yarn gen (or npm run gen)
+     
+     7. yarn start (or npm start)
 
 <a name="graphql"></a>
 ## Running the Boilerplate **with a GraphQL API!!**
 
 	1. git clone https://github.com/regisBafutwabo/react-typescript-boilerplate.git <YOUR PROJECT NAME>
+    
 	2. cd <YOUR PROJECT NAME>
+    
     3. rm -rf .git : remove the git folder and initiate your own git ...
-	4. yarn
+    
+	4. yarn (or npm i )
+    
 	5. setup the .env with the API configurations as shown in the next section
-	6. yarn gen
-	7. yarn start
+    
+	6. yarn gen (or npm run gen)
+    
+    7. yarn start (or npm start)
 
 <a name="hasura"></a>
 ## Running the Boilerplate **with a Hasura API!!**
 
     1. git clone https://github.com/regisBafutwabo/react-typescript-boilerplate.git <YOUR PROJECT NAME>
+    
 	2. cd <YOUR PROJECT NAME>
+    
 	3. rm -rf .git : remove the git folder and initiate your own git ...
-	4. yarn
+    
+	4. yarn (or npm i )
+    
 	5. Modify `src/apollo/state/**/*.schema.ts`: every `*.schema.ts` file in the apollo/state subfolders as follows:
 
-<img src="docs/hasura_schema.png" alt="./src/apollo/state/i18n/i18n.schema.ts"/>
+<img src="https://raw.githubusercontent.com/regisBafutwabo/react-typescript-boilerplate/master/docs/hasura_schema.png" alt="./src/apollo/state/i18n/i18n.schema.ts"/>
 
 
-	6. yarn gen
-	7. yarn start
+	6. yarn gen (or npm run gen)
+    
+    7. yarn start (or npm start)
 
 
 <a name="env"></a>
@@ -103,16 +121,16 @@ By now, I think you have realized that the apollo folder relies on some kind of 
 ## Features
 
 - **Typescript** - A superset of Javascript providing static typing, classes and interfaces.
-- **Apollo Client** - A fully-featured caching GraphQL client with integrations for React which allows you to easily build UI components that fetch data via GraphQL.
+- **Apollo Client** - A fully-featured caching GraphQL client with integrations for React which allows you to easily build UI components that fetch data via GraphQL.[Learn More](https://www.apollographql.com/docs/react/)
 - **Apollo Cache Persist** - Utilizes async storage to persist and rehydrate the Apollo store
 - **React Router DOM** - A collection of navigational components that compose declaratively with your application.
-- **Styled Components** - Powerful CSS in JS module providing template literals to support dynamic styling.
-- **Ant Design** - An enterprise-class UI _design_ language and React UI library with a set of high-quality React components, one of best React UI library for enterprises.
+- **Styled Components** - Powerful CSS in JS module providing template literals to support dynamic styling.[Learn More](https://styled-components.com/)
+- **Ant Design** - An enterprise-class UI _design_ language and React UI library with a set of high-quality React components, one of best React UI library for enterprises.[Learn More](https://ant.design/)
 - **EsLint/Prettier/Airbnb linting style** - Enforces code styling, and standards. Airbnb's tslint guidelines are followed by default.
-- **React-i18next** - A powerful internationalization framework for React based on i18next.
-- **Test** - Testing support for React based and apollo client.
-- **Storybook** - Enables developers to test UI components in isolation
-- **Hasura Connection** - Used to setup a connection a hasura server.
+- **React-i18next** - A powerful internationalization framework for React based on i18next.[Learn More](https://react.i18next.com/)
+- **Test** - Testing support for React and apollo client.
+- **Storybook** - Enables developers to test UI components in isolation.[Learn More](https://storybook.js.org/)
+- **Server Connection** - Used to setup a connection a hasura or GraphQL API server.[Learn More on Hasura](https://hasura.io/)
 
 
 <a name="folder"></a>
@@ -203,6 +221,7 @@ this folder contains all of your storybook components. For more information on s
 
 <a name="contributing"></a>
 ## Contributing
+You are welcome to add a feature or improve this boilerplate since I believe that there is multiple ways to use these tools.
 
 To contribute to <project_name>, follow these steps:
 
