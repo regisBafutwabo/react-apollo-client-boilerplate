@@ -26,7 +26,7 @@ describe("App Component", () => {
             </ApolloProvider>,
         );
 
-        const linkElement = getByText(/Welcome to React/i);
+        const linkElement = getByText(/Loading.../i) || getByText(/Welcome to React/i);
         expect(linkElement).toBeInTheDocument();
     });
 
@@ -44,7 +44,6 @@ describe("App Component", () => {
                 </I18nextProvider>
             </ApolloProvider>,
         );
-
         expect(component).toMatchSnapshot();
     });
 });

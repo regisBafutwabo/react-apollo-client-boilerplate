@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import React from "react";
 import { Card } from "antd";
-import Image from "../components/atoms/Image/Image.impl";
+import Image from "../components/atoms/Image";
 import logo from "../assets/app/logo.svg";
 
 export default {

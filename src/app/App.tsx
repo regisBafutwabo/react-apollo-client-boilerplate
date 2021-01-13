@@ -13,21 +13,36 @@ const App = () => {
                     exact
                     path="/NotFound"
                     render={(props: RouteComponentProps<any>) => (
-                        <ErrorPage type="404" {...props} />
+                        <ErrorPage
+                            type="404"
+                            history={props.history}
+                            location={props.location}
+                            match={props.match}
+                        />
                     )}
                 />
                 <Route
                     exact
                     path="/Unauthorized"
                     render={(props: RouteComponentProps<any>) => (
-                        <ErrorPage type="403" {...props} />
+                        <ErrorPage
+                            type="403"
+                            history={props.history}
+                            location={props.location}
+                            match={props.match}
+                        />
                     )}
                 />
                 <Route
                     exact
                     path="/Error"
                     render={(props: RouteComponentProps<any>) => (
-                        <ErrorPage type="500" {...props} />
+                        <ErrorPage
+                            type="500"
+                            history={props.history}
+                            location={props.location}
+                            match={props.match}
+                        />
                     )}
                 />
 

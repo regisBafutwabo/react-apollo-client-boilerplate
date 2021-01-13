@@ -2,8 +2,8 @@ import React from "react";
 import { Header } from "components/organisms";
 
 import { useQuery, useMutation } from "@apollo/client";
-import { Container, Body } from "./styles";
 import { getLocalUser, updateLocalUser } from "apollo/Operations/Client/Queries";
+import { Container, Body } from "./styles";
 
 const StandardTemplate: React.FC = (props: any) => {
     const { children } = props;

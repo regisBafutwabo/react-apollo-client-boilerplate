@@ -3,9 +3,9 @@ import React from "react";
 import Button from "antd/lib/button";
 import { PageTitle } from "components/atoms";
 import { useTranslation } from "react-i18next";
+import { useHistory } from "react-router-dom";
 import { Container, Result } from "./styles";
 import { ErrorPageProps } from "./ErrorPage.interface";
-import { useHistory } from "react-router-dom";
 
 export const ErrorPage: React.FC<ErrorPageProps.IProps> = props => {
     const { type } = props;

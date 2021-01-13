@@ -6,8 +6,8 @@ import { MockedProvider } from "@apollo/client/testing";
 
 import { ThemeProvider } from "styled-components";
 import theme from "styles/theme";
-import StandardTemplate from "..";
 import { getLocalUser } from "apollo/Operations/Client/Queries";
+import StandardTemplate from "..";
 
 describe("Standard Template", () => {
     // Mocking useLocalUpdateUserMutation and useLocalUserQuery
