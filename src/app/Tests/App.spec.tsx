@@ -29,21 +29,4 @@ describe("App Component", () => {
         const linkElement = getByText(/Loading.../i) || getByText(/Welcome to React/i);
         expect(linkElement).toBeInTheDocument();
     });
-
-    it("should match with the snapshot", async () => {
-        const history = createBrowserHistory();
-        const client = await getApolloClient();
-        const i18n = await createI18n(client);
-
-        const component = shallow(
-            <ApolloProvider client={client}>
-                <I18nextProvider i18n={i18n}>
-                    <Router history={history}>
-                        <App />
-                    </Router>
-                </I18nextProvider>
-            </ApolloProvider>,
-        );
-        expect(component).toMatchSnapshot();
-    });
 });
