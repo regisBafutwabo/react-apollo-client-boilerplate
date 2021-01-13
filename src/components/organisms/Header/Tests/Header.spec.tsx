@@ -1,12 +1,9 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
-/* eslint-disable import/no-extraneous-dependencies */
 import React from "react";
 import { cleanup, render } from "@testing-library/react";
 import { GraphQLError } from "graphql";
 import { ApolloProvider } from "@apollo/client";
-import createApolloClient from "apollo";
-import Header from "../Header";
+import { getApolloClient } from "apollo";
+import Header from "../Header.impl";
 
 afterEach(cleanup);
 
@@ -16,7 +13,7 @@ const LogoutFn = jest.fn();
 describe("Header component", () => {
     // When data is available
     it(" should render with mocked data", async () => {
-        const client = await createApolloClient();
+        const client = await getApolloClient();
         const data = { localUser: { isLoggedIn: true } };
 
         const { debug } = render(
@@ -34,7 +31,7 @@ describe("Header component", () => {
     });
     // When data is not yet there but its loading...
     it(" should render in loading state", async () => {
-        const client = await createApolloClient();
+        const client = await getApolloClient();
         const { debug } = render(
             <ApolloProvider client={client}>
                 <Header
@@ -51,7 +48,7 @@ describe("Header component", () => {
 
     // When there is an error while fetching the data
     it(" should render with mocked error data", async () => {
-        const client = await createApolloClient();
+        const client = await getApolloClient();
         const errorMsg: GraphQLError[] = [
             {
                 message: "something went wrong",

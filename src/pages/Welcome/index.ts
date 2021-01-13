@@ -1,3 +1,3 @@
-import Welcome from "./Welcome";
+import Welcome from "./Welcome.impl";
 
 export default Welcome;

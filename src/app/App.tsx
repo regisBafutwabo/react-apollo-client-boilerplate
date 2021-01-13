@@ -1,11 +1,8 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable import/extensions */
 import React from "react";
 import { Switch, Route, Redirect, RouteComponentProps } from "react-router-dom";
-import { Welcome, ErrorPage } from "pages";
 import { ThemeProvider } from "styled-components";
 import theme from "styles/theme";
+import { ErrorPage, Welcome } from "./loadable";
 
 const App = () => {
     return (

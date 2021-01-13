@@ -1,10 +1,6 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/no-extraneous-dependencies */
-import React, { CSSProperties } from "react";
+import React from "react";
 import { shallow } from "enzyme";
-import { useLocalUpdateUserMutation } from "generated/graphql";
-import Button from "../Button";
-import { Container } from "../styles";
+import Button from "../Button.impl";
 
 describe("Button component", () => {
     const clickFn = jest.fn();

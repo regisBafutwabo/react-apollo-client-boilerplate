@@ -7,20 +7,20 @@ import "./index.css";
 import { Router } from "react-router-dom";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { createBrowserHistory } from "history";
-import createApolloClient from "apollo";
+import { getApolloClient } from "apollo";
 import { I18nextProvider } from "react-i18next";
 import App from "app";
 import { ApolloProvider } from "@apollo/client";
 import * as serviceWorker from "./serviceWorker";
 import "antd/dist/antd.css";
 import "./storybook.css";
-import createI18n from "./i18n";
+import createI18n from "./i18n/i18n";
 
 async function bootStrap() {
     // get the history stack of routes
     const history = createBrowserHistory();
     // get the apollo client store
-    const client = await createApolloClient();
+    const client = await getApolloClient();
     // get the inital language from the store
     const i18n = await createI18n(client);
 

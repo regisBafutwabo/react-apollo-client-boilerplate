@@ -1,21 +1,25 @@
-/* eslint-disable no-unused-vars */
-import { ApolloClient, NormalizedCacheObject, InMemoryCache } from "@apollo/client";
-// import { errorLink } from "./Errorhandler";
-// import link from "./middlewares";
-import initCache from "./cache";
-import { resolvers } from "./state";
+import { InMemoryCache, ApolloClient } from "@apollo/client";
+import { typeDefs } from "./TypeDefs";
+import { LocalResolvers } from "./Operations/Client/Mutations";
+import link from "./Middlewares";
+import initCache from "./Cache";
 /**
  * If you are not using no graphql connection connection
  */
-const createApolloClient = async (): Promise<ApolloClient<NormalizedCacheObject>> => {
+let client: ApolloClient<any>;
+
+export const getApolloClient = async (): Promise<ApolloClient<any>> => {
+    if (client) return client;
+
     const cache: InMemoryCache = await initCache();
-    const apolloClient: ApolloClient<NormalizedCacheObject> = new ApolloClient({
-        // link: errorLink.concat(link),
+
+    const apolloClient: ApolloClient<any> = new ApolloClient({
+        link,
         cache,
-        resolvers,
+        connectToDevTools: process.env.NODE_ENV === "development",
+        typeDefs,
+        resolvers: LocalResolvers,
     });
 
     return apolloClient;
 };
-
-export default createApolloClient;

@@ -1,3 +1,3 @@
-import Loading from "./Loading";
+import Loading from "./Loading.impl";
 
 export default Loading;

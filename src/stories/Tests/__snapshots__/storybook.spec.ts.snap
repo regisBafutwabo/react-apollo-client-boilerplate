@@ -17,7 +17,7 @@ exports[`Storyshots Button Emoji 1`] = `
     style={Object {}}
   >
     <button
-      className="ant-btn sc-AxirZ jrUfGx"
+      className="ant-btn sc-gsTCUz eOBObr"
       onClick={[Function]}
       type="button"
     >
@@ -49,7 +49,7 @@ exports[`Storyshots Button Loading 1`] = `
     style={Object {}}
   >
     <button
-      className="ant-btn sc-AxirZ jrUfGx"
+      className="ant-btn sc-gsTCUz eOBObr"
       onClick={[Function]}
       type="button"
     >
@@ -95,7 +95,7 @@ exports[`Storyshots Button Text 1`] = `
     style={Object {}}
   >
     <button
-      className="ant-btn sc-AxirZ jrUfGx"
+      className="ant-btn sc-gsTCUz eOBObr"
       onClick={[Function]}
       type="button"
     >
@@ -125,7 +125,7 @@ exports[`Storyshots Image React Logo Size 250 1`] = `
   >
     <img
       alt="logo"
-      className="sc-AxjAm jYMWUG"
+      className="sc-bdfBwQ cDXhbX"
       src="logo.svg"
       width="250"
     />
@@ -151,7 +151,7 @@ exports[`Storyshots Image React Logo Size 500 1`] = `
   >
     <img
       alt="logo"
-      className="sc-AxjAm jYpvqk"
+      className="sc-bdfBwQ cFcuSh"
       src="logo.svg"
       width="500"
     />
@@ -197,6 +197,9 @@ exports[`Storyshots Task Archived 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
             type="checkbox"
           />
           <span
@@ -253,6 +256,9 @@ exports[`Storyshots Task Default 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
             type="checkbox"
           />
           <span
@@ -276,7 +282,6 @@ exports[`Storyshots Task Default 1`] = `
           >
             <svg
               aria-hidden="true"
-              className=""
               data-icon="star"
               fill="currentColor"
               focusable="false"
@@ -466,6 +471,9 @@ exports[`Storyshots Task List With Pinned Tasks 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onKeyUp={[Function]}
               type="checkbox"
             />
             <span
@@ -503,6 +511,9 @@ exports[`Storyshots Task List With Pinned Tasks 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onKeyUp={[Function]}
               type="checkbox"
             />
             <span
@@ -531,7 +542,6 @@ exports[`Storyshots Task List With Pinned Tasks 1`] = `
             >
               <svg
                 aria-hidden="true"
-                className=""
                 data-icon="star"
                 fill="currentColor"
                 focusable="false"
@@ -570,6 +580,9 @@ exports[`Storyshots Task List With Pinned Tasks 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onKeyUp={[Function]}
               type="checkbox"
             />
             <span
@@ -593,7 +606,6 @@ exports[`Storyshots Task List With Pinned Tasks 1`] = `
             >
               <svg
                 aria-hidden="true"
-                className=""
                 data-icon="star"
                 fill="currentColor"
                 focusable="false"
@@ -652,6 +664,9 @@ exports[`Storyshots Task Pinned 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
             type="checkbox"
           />
           <span
@@ -680,7 +695,6 @@ exports[`Storyshots Task Pinned 1`] = `
           >
             <svg
               aria-hidden="true"
-              className=""
               data-icon="star"
               fill="currentColor"
               focusable="false"

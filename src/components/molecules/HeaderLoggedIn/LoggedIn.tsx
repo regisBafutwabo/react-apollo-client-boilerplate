@@ -2,12 +2,9 @@ import React from "react";
 import { Button } from "components/atoms";
 import { useTranslation } from "react-i18next";
 import { LoggedInText } from "./styles";
+import { LoggedInProps } from "./LoggedIn.interface";
 
-interface IProps {
-    Logout: any;
-}
-
-const LoggedIn: React.FC<IProps> = ({ Logout }) => {
+const LoggedIn: React.FC<LoggedInProps.IProps> = ({ Logout }) => {
     const { t } = useTranslation();
     return (
         <>

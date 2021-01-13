@@ -2,7 +2,7 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
 import { Card } from "antd";
-import Button from "../components/atoms/Button/Button";
+import Button from "../components/atoms/Button/Button.impl";
 
 export default {
     title: "Button",

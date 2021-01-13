@@ -1,3 +1,3 @@
-import EmptyData from "./EmptyData";
+import EmptyData from "./EmptyData.impl";
 
 export default EmptyData;

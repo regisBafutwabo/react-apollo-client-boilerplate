@@ -13,21 +13,6 @@
         "node": true
     },
     "rules": {
-        "graphql/template-strings": ["error", {
-            "env": "apollo",
-            "validators": [
-                "KnownFragmentNames",
-                "NoUnusedFragments",
-                "NoUnusedVariables",
-                "FieldsOnCorrectType",
-                "FragmentsOnCompositeTypes"
-            ],
-            "schemaJsonFilepath": "./introspection.json"
-        }],
-        "graphql/named-operations": ["error", {
-            "env": "apollo",
-            "schemaJsonFilepath": "./introspection.json"
-        }],
         "import/no-unresolved": 0,
         "import/extensions": ["warn", "never"],
         "import/prefer-default-export":[0],

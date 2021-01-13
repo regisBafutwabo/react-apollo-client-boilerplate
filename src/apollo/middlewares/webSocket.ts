@@ -10,7 +10,7 @@ const version = process.env.REACT_APP_GRAPHQL_VERSION;
 const route = process.env.REACT_APP_GRAPHQL_ROUTE;
 
 const wsLink = new WebSocketLink({
-    uri: `${protocol}://${host}:${port}/${version}/${route}`,
+    uri: `ws://${host}:${port}/${version}/${route}`,
     options: {
         reconnect: true,
     },

@@ -1,22 +1,20 @@
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-extraneous-dependencies */
 import React from "react";
-import { render, wait } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import { MockedProvider } from "@apollo/client/testing";
-import {
-    CLIENT_UPDATE_USER_STATE,
-    CLIENT_GET_USER_STATE,
-} from "apollo/state/user/user.queries";
+
 import { ThemeProvider } from "styled-components";
 import theme from "styles/theme";
 import StandardTemplate from "..";
+import { getLocalUser } from "apollo/Operations/Client/Queries";
 
 describe("Standard Template", () => {
     // Mocking useLocalUpdateUserMutation and useLocalUserQuery
     const UserMock = [
         {
             request: {
-                query: CLIENT_UPDATE_USER_STATE,
+                query: getLocalUser,
                 variables: {
                     isLoggedIn: true,
                 },
@@ -24,7 +22,7 @@ describe("Standard Template", () => {
         },
         {
             request: {
-                query: CLIENT_GET_USER_STATE,
+                query: getLocalUser,
             },
             result: {
                 data: {
@@ -56,7 +54,7 @@ describe("Standard Template", () => {
                 </ThemeProvider>
             </MockedProvider>,
         );
-        await wait();
+
         expect(Container).toMatchSnapshot();
     });
 });

@@ -4,8 +4,8 @@ import { render } from "@testing-library/react";
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import { ApolloProvider } from "@apollo/client";
-import createApolloClient from "apollo";
-import createI18n from "i18n";
+import { getApolloClient } from "apollo";
+import createI18n from "i18n/i18n";
 import { I18nextProvider } from "react-i18next";
 import { shallow } from "enzyme";
 import App from "../App";
@@ -13,9 +13,9 @@ import App from "../App";
 describe("App Component", () => {
     test("renders App Component", async () => {
         const history = createBrowserHistory();
-        const client = await createApolloClient();
+        const client = await getApolloClient();
         const i18n = await createI18n(client);
-        console.log("client", i18n);
+
         const { getByText } = render(
             <ApolloProvider client={client}>
                 <I18nextProvider i18n={i18n}>
@@ -25,13 +25,14 @@ describe("App Component", () => {
                 </I18nextProvider>
             </ApolloProvider>,
         );
+
         const linkElement = getByText(/Welcome to React/i);
         expect(linkElement).toBeInTheDocument();
     });
 
     it("should match with the snapshot", async () => {
         const history = createBrowserHistory();
-        const client = await createApolloClient();
+        const client = await getApolloClient();
         const i18n = await createI18n(client);
 
         const component = shallow(
