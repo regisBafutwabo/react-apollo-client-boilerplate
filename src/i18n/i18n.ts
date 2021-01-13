@@ -12,7 +12,7 @@ async function createI18n(apolloClient: ApolloClient<any>) {
         resources: resources.default,
 
         debug: false,
-        fallbackLng: "ko",
+        fallbackLng: "en",
         lng: i18.i18n.lng,
         keySeparator: false,
         ns: ["translation"],
