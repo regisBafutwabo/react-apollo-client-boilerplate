@@ -114,6 +114,7 @@
     "graphql-cli": "4.1.0",
     "graphql-faker": "2.0.0-rc.23",
     "graphql-tools": "^4.0.7",
+    "husky": "^4.3.7",
     "i18next-scanner": "^2.11.0",
     "prettier": "^1.19.1",
     "react-docgen-typescript-loader": "^3.7.1",
@@ -121,6 +122,11 @@
     "react-test-renderer": "^16.13.1",
     "ts-jest": "^25.2.1",
     "ts-loader": "^6.2.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
   },
   "jest": {
     "snapshotSerializers": [
