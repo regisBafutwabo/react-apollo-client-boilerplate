@@ -1,20 +1,20 @@
-/* eslint-disable import/extensions */
 import "react-app-polyfill/ie9";
 import "react-app-polyfill/stable";
+
 import React from "react";
 import { hydrate, render } from "react-dom";
-import "./index.css";
 import { Router } from "react-router-dom";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { createBrowserHistory } from "history";
-import { getApolloClient } from "apollo";
 import { I18nextProvider } from "react-i18next";
-import App from "app";
 import { ApolloProvider } from "@apollo/client";
+
+import App from "app";
+import { getApolloClient } from "apollo";
 import * as serviceWorker from "./serviceWorker";
+import createI18n from "./i18n/i18n";
+import "./index.css";
 import "antd/dist/antd.css";
 import "./storybook.css";
-import createI18n from "./i18n/i18n";
 
 async function bootStrap() {
     // get the history stack of routes

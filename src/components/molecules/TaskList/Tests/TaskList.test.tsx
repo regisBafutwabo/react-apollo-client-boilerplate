@@ -1,4 +1,3 @@
-/* eslint-disable import/extensions */
 import React from "react";
 import ReactDOM from "react-dom";
 import { WithPinnedTasks } from "../../../../stories/4-TaskList.stories";

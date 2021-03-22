@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import { fetchTypeDefs } from "apollo-mocked-provider";
 
 const protocol = process.env.REACT_APP_GRAPHQL_PROTOCOL;

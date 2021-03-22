@@ -5,7 +5,7 @@ import { ApolloClient } from "@apollo/client";
 import * as resources from "./locales";
 
 async function createI18n(apolloClient: ApolloClient<any>) {
-    // get the initial language in the apollo store
+    // get the initial language from the apollo store
     const i18 = await apolloClient.readQuery({ query: getLanguage });
 
     const options: InitOptions = {

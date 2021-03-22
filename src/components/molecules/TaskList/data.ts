@@ -1,5 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-/* eslint-disable import/no-extraneous-dependencies */
 import { action } from "@storybook/addon-actions";
 
 export const tasks = [

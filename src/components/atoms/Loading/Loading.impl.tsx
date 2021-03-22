@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import { Spin, Skeleton } from "antd";
 import { LoadingProps } from "./Loading.interface";

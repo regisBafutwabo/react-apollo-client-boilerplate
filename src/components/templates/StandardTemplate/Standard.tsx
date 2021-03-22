@@ -1,31 +1,39 @@
 import React from "react";
 import { Header } from "components/organisms";
 
-import { useQuery, useMutation } from "@apollo/client";
-import { getLocalUser, updateLocalUser } from "apollo/Operations/Client/Queries";
+import { useQuery } from "@apollo/client";
+import { getLocalUser } from "apollo/Operations/Client/Queries";
+import { AuthService } from "services";
+import { initialUser } from "apollo/State";
 import { Container, Body } from "./styles";
 
 const StandardTemplate: React.FC = (props: any) => {
     const { children } = props;
 
-    // Check user status query
     const { loading, error, data } = useQuery(getLocalUser);
 
-    // call logout mutation
-    const [Logout] = useMutation(updateLocalUser, {
-        variables: { isLoggedIn: false },
-    });
-    // call login mutation
-    const [LogIn, { loading: loginLoader }] = useMutation(updateLocalUser, {
-        variables: { isLoggedIn: true },
-    });
+    const login = async () => {
+        try {
+            await AuthService.login();
+        } catch (err) {
+            alert(err);
+        }
+    };
+
+    const logout = async () => {
+        try {
+            await AuthService.logout();
+        } catch (err) {
+            alert(err);
+        }
+    };
 
     return (
         <Container>
             <Header
-                Login={LogIn}
-                Logout={Logout}
-                loading={loading || loginLoader}
+                Login={login}
+                Logout={logout}
+                loading={loading}
                 error={error}
                 data={data}
             />

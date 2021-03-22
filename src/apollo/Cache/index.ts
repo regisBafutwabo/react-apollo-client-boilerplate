@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { InMemoryCache } from "@apollo/client";
 import { persistCache, PersistentStorage } from "apollo3-cache-persist";
 import { TypePolicy } from "apollo/TypePolicies";

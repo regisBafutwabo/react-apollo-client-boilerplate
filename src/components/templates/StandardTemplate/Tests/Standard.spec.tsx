@@ -1,5 +1,3 @@
-/* eslint-disable import/extensions */
-/* eslint-disable import/no-extraneous-dependencies */
 import React from "react";
 import { render } from "@testing-library/react";
 import { MockedProvider } from "@apollo/client/testing";

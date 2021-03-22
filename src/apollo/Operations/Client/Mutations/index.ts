@@ -1,5 +1,10 @@
-import { Resolvers } from "@apollo/client";
-import { userStateResolvers } from "./user";
-import { i18nResolvers } from "./i18n";
+import { Language } from "apollo/Models";
+import { updateLanguage } from "./i18n";
+import { updateLocalUser } from "./user";
 
-export const LocalResolvers: Resolvers[] = [i18nResolvers, userStateResolvers];
+export const i18nMutations = {
+    updateLanguage: async (lang: Language) => updateLanguage(lang),
+};
+export const localUserMutations = {
+    updateLocalUser: async (isLoggedIn: boolean) => updateLocalUser(isLoggedIn),
+};

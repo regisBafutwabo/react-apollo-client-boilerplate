@@ -1,1 +1,1 @@
-export * from "./updateLanguage.resolvers";
+export * from "./updateLanguage";

@@ -1,10 +1,10 @@
-/* eslint-disable react/no-array-index-key */
 import React, { useState } from "react";
 import { Menu, Dropdown } from "antd";
 import { DownOutlined, TranslationOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
 import { useMutation } from "@apollo/client";
 import { updateLanguage } from "apollo/Operations/Client/Queries";
+import { I18nService } from "services";
 import { LanguageSelectorProps } from "./LanguageSelector.interface";
 
 const LanguageSelector = (props: LanguageSelectorProps.IProps) => {
@@ -21,12 +21,16 @@ const LanguageSelector = (props: LanguageSelectorProps.IProps) => {
 
     const changeLanguage = async (e: any) => {
         const { key } = e;
-        if (key === "0") {
-            await changeLang({ variables: { language: "en" } });
-            i18n.changeLanguage("en");
-        } else if (key === "1") {
-            await changeLang({ variables: { language: "ko" } });
-            i18n.changeLanguage("ko");
+        try {
+            if (key === "0") {
+                await I18nService.changeLanguage("en");
+                i18n.changeLanguage("en");
+            } else if (key === "1") {
+                await I18nService.changeLanguage("ko");
+                i18n.changeLanguage("ko");
+            }
+        } catch (error) {
+            alert(error);
         }
     };
 

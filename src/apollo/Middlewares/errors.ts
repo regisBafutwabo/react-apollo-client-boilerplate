@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable import/prefer-default-export */
 import { onError } from "@apollo/client/link/error";
 
 export const errorLink = onError(({ graphQLErrors, networkError }) => {

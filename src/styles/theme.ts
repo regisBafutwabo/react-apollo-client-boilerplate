@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { DefaultTheme } from "styled-components";
 
 const theme: DefaultTheme = {

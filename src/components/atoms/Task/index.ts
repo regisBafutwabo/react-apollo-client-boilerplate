@@ -1,3 +1,3 @@
-import Task from "./Task";
+import Task from "./Task.impl";
 
 export default Task;
