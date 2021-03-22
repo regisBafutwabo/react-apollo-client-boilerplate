@@ -12,8 +12,6 @@ export const TypePolicy: TypePolicies = {
                     return existing;
                 },
                 merge(existing, incoming) {
-                    console.log("existing", existing);
-                    console.log("incoming", incoming);
                     return { ...existing, ...incoming };
                 },
             },

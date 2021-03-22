@@ -15,6 +15,33 @@ const Task: React.FC<TaskInterfaceProps> = props => {
         onPinTask,
     } = props;
 
+    const showByTaskStatus = () => {
+        switch (state) {
+            case "TASK_PINNED":
+                return (
+                    <span
+                        onClick={() => onPinTask(id)}
+                        role="button"
+                        tabIndex={0}
+                        onKeyDown={() => onPinTask(id)}>
+                        <StarFilled style={{ color: "#ffc300" }} />
+                    </span>
+                );
+            case "TASK_INBOX":
+                return (
+                    <span
+                        onClick={() => onPinTask(id)}
+                        role="button"
+                        tabIndex={0}
+                        onKeyDown={() => onPinTask(id)}>
+                        <StarOutlined />
+                    </span>
+                );
+            default:
+                return <></>;
+        }
+    };
+
     return (
         <div
             className="list-item"
@@ -22,20 +49,12 @@ const Task: React.FC<TaskInterfaceProps> = props => {
             <Checkbox checked={state === "TASK_ARCHIVED"} id={title}>
                 {title}
             </Checkbox>
-            <div onClick={event => event.stopPropagation()}>
-                {state === "TASK_PINNED" ? (
-                    // eslint-disable-next-line jsx-a11y/anchor-is-valid
-                    <a onClick={() => onPinTask(id)}>
-                        <StarFilled style={{ color: "#ffc300" }} />
-                    </a>
-                ) : state === "TASK_INBOX" ? (
-                    // eslint-disable-next-line jsx-a11y/anchor-is-valid
-                    <a onClick={() => onPinTask(id)}>
-                        <StarOutlined />
-                    </a>
-                ) : (
-                    <></>
-                )}
+            <div
+                role="button"
+                tabIndex={0}
+                onClick={event => event.stopPropagation()}
+                onKeyDown={event => event.stopPropagation()}>
+                {showByTaskStatus()}
             </div>
         </div>
     );
