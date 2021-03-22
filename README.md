@@ -38,16 +38,14 @@ In order to use this template, you should have a basic understanding of React an
     
 	4. yarn (or npm i )
 
-	5. yarn gen (or npm run gen)
-
-	6. yarn start (or npm start)
+	5. yarn start (or npm start)
 
 <a name="env"></a>
 ## `.env` Configuration
 
 By now, I think you have realized that the apollo folder relies on some kind of server link. Here is the way to setup your `.env` file if you are planning to use it:
-1. create the `.env` file in your root folder
-2. populate in this way (this is an example) :
+1. create an environment file (`.env`) in your root folder
+2. populate using the `.env.example` file :
 	
 		REACT_APP_GRAPHQL_PROTOCOL = http
 
