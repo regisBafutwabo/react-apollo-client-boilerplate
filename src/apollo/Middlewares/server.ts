@@ -1,5 +1,5 @@
 /**
- * This file setup the connection to hasura server
+ * This file setup the connection to a graphql server
  */
 import { HttpLink } from "@apollo/client";
 
