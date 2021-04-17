@@ -15,7 +15,7 @@ const StandardTemplate: React.FC = (props: any) => {
         try {
             await AuthService.login();
         } catch (err) {
-            alert(err);
+            console.error(err);
         }
     };
 
@@ -23,7 +23,7 @@ const StandardTemplate: React.FC = (props: any) => {
         try {
             await AuthService.logout();
         } catch (err) {
-            alert(err);
+            console.error(err);
         }
     };
 

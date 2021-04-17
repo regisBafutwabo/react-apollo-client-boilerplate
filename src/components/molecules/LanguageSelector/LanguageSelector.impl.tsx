@@ -27,7 +27,7 @@ const LanguageSelector = (props: LanguageSelectorProps.IProps) => {
                 i18n.changeLanguage("ko");
             }
         } catch (error) {
-            alert(error);
+            console.error(error);
         }
     };
 
