@@ -4,7 +4,6 @@ import { Header } from "components/organisms";
 import { useQuery } from "@apollo/client";
 import { getLocalUser } from "apollo/Operations/Client/Queries";
 import { AuthService } from "services";
-import { initialUser } from "apollo/State";
 import { Container, Body } from "./styles";
 
 const StandardTemplate: React.FC = (props: any) => {

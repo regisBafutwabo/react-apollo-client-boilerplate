@@ -19,5 +19,7 @@ export const getApolloClient = async (): Promise<ApolloClient<any>> => {
         typeDefs,
     });
 
+    client = apolloClient;
+
     return apolloClient;
 };

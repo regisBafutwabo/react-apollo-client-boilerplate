@@ -1,7 +1,6 @@
 import { getApolloClient } from "apollo";
 import { Language } from "apollo/Models";
 import { getLanguage } from "apollo/Operations/Client/Queries";
-import { initialI18n } from "apollo/State";
 
 export const updateLanguage = async (language: Language) => {
     try {
@@ -16,8 +15,6 @@ export const updateLanguage = async (language: Language) => {
                 i18n: updatedLanguage,
             },
         });
-
-        initialI18n(updatedLanguage);
     } catch (error) {
         throw new Error(error.message);
     }

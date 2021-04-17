@@ -1,5 +1,4 @@
 import { getApolloClient } from "apollo";
-import { initialUser } from "apollo/State";
 import { getLocalUser } from "apollo/Operations/Client/Queries";
 
 export const updateLocalUser = async (isLoggedIn: boolean) => {
@@ -15,8 +14,6 @@ export const updateLocalUser = async (isLoggedIn: boolean) => {
                 localUser: updatedUser,
             },
         });
-
-        initialUser(updatedUser);
     } catch (error) {
         throw new Error(error.message);
     }

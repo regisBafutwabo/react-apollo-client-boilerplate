@@ -2,15 +2,12 @@ import React, { useState } from "react";
 import { Menu, Dropdown } from "antd";
 import { DownOutlined, TranslationOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
-import { useMutation } from "@apollo/client";
-import { updateLanguage } from "apollo/Operations/Client/Queries";
 import { I18nService } from "services";
 import { LanguageSelectorProps } from "./LanguageSelector.interface";
 
 const LanguageSelector = (props: LanguageSelectorProps.IProps) => {
     const { languages } = props;
 
-    const [changeLang] = useMutation(updateLanguage);
     const { i18n } = useTranslation();
 
     const [visible, setVisible] = useState(false);
