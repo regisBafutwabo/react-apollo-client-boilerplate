@@ -42,6 +42,7 @@ jobs:
     - name: Build
       run: yarn build --if-present
     - name: Deploying
-      run: now
-      
+      run: vercel login
+    - name: Vercel
+      run: vercel
     
