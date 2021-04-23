@@ -39,9 +39,9 @@ jobs:
       run: yarn install --silent
     - name: Linting
       run: yarn lint 
-    - name: Testing
-      run: yarn test
     - name: Build
       run: yarn build --if-present
+    - name: Deploying
+      run: now
       
     
