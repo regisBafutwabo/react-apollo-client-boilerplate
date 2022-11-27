@@ -6,7 +6,20 @@ A React-typescript configuration template for projects using apollo client as th
 
 ## Table of Contents
 
--   [React Boilerplate with Typescript and Apollo Client](#react-boilerplate-with-typescript-and-apollo-client) - [Table of Contents](#table-of-contents) - [Prerequisites](#prerequisites) - [Running the Boilerplate](#running-the-boilerplate) - [`.env` Configuration](#env-configuration) - [Features](#features) - [Folder Structure](#folder-structure) - [Setup Explanation](#setup-explanation) - [apollo](#apollo) - [components](#components) - [locales](#locales) - [stories](#stories) - [Running the `scripts` command](#running-the-scripts-command) - [Contributing](#contributing)
+- [React Boilerplate with Typescript and Apollo Client](#react-boilerplate-with-typescript-and-apollo-client) 
+- [Table of Contents](#table-of-contents) 
+- [Prerequisites](#prerequisites) 
+- [Running the Boilerplate](#running-the-boilerplate) 
+- [`.env` Configuration](#env-configuration) 
+- [Features](#features) 
+- [Folder Structure](#folder-structure) 
+- [Setup Explanation](#setup-explanation) 
+- [apollo](#apollo) 
+- [components](#components) 
+- [locales](#locales) 
+- [stories](#stories) 
+- [Running the `scripts` command](#running-the-scripts-command) 
+- [Contributing](#contributing)
 
 <a name="Prerequisite"></a>
 
