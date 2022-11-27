@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import Button from "../Button.impl";
+import Button from "..";
 
 describe("Button component", () => {
     const clickFn = jest.fn();

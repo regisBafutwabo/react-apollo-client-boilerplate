@@ -1,13 +1,14 @@
 import React from "react";
-import { render } from "@testing-library/react";
-import { Router } from "react-router-dom";
-import { createBrowserHistory } from "history";
-import { ApolloProvider } from "@apollo/client";
+
 import { getApolloClient } from "apollo";
+import { createBrowserHistory } from "history";
 import createI18n from "i18n/i18n";
 import { I18nextProvider } from "react-i18next";
-import { shallow } from "enzyme";
-import App from "../App";
+
+import { ApolloProvider } from "@apollo/client";
+import { render } from "@testing-library/react";
+
+import App from "../index";
 
 describe("App Component", () => {
     test("renders App Component", async () => {
@@ -18,9 +19,7 @@ describe("App Component", () => {
         const { getByText } = render(
             <ApolloProvider client={client}>
                 <I18nextProvider i18n={i18n}>
-                    <Router history={history}>
-                        <App />
-                    </Router>
+                    <App />
                 </I18nextProvider>
             </ApolloProvider>,
         );

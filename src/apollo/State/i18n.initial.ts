@@ -1,5 +1,11 @@
 import { makeVar } from "@apollo/client";
-import { i18nModel } from "apollo/Models";
+
+export type Language = "ko" | "en";
+
+type i18nModel = {
+    __typename: string;
+    lng: Language;
+};
 
 export const initialI18n = makeVar<i18nModel>({
     lng: "ko",

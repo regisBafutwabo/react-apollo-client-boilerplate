@@ -1,4 +1,5 @@
-import { Language } from "apollo/Models";
+import { Language } from "apollo/State";
+
 import { i18nMutations } from "../../apollo/Operations/Client/Mutations/index";
 
 export class I18nService {

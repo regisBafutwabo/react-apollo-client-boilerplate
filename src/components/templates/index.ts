@@ -1,3 +1,3 @@
-import StandardTemplate from "./StandardTemplate/index";
+import StandardTemplate from "./StandardTemplate";
 
 export { StandardTemplate };

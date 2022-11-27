@@ -5,7 +5,11 @@
         "prettier/react",
         "eslint-config-prettier"
     ],
-    "plugins": ["@typescript-eslint", "prettier", "eslint-plugin-prettier", "graphql"],
+    "plugins": [
+        "prettier",
+        "eslint-plugin-prettier",
+        "graphql"
+    ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "project": "./tsconfig.json"
@@ -18,18 +22,34 @@
         "node": true
     },
     "rules": {
+        "react/react-in-jsx-scope": "off",
         "import/no-unresolved": 0,
-        "import/extensions": ["off"],
+        "import/extensions": [
+            "off"
+        ],
         "no-unused-vars": "off",
-        "import/prefer-default-export": [0],
-        "react/prop-types": [0],
-        "react/no-array-index-key": ["off"],
+        "import/prefer-default-export": [
+            0
+        ],
+        "react/prop-types": [
+            0
+        ],
+        "react/no-array-index-key": [
+            "off"
+        ],
         "camelcase": "off",
-        "import/no-extraneous-dependencies": ["off"],
+        "import/no-extraneous-dependencies": [
+            "off"
+        ],
         "react/jsx-filename-extension": [
             "warn",
             {
-                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ]
             }
         ],
         "max-len": [

@@ -1,4 +1,5 @@
-import { Language } from "apollo/Models";
+import { Language } from "apollo/State";
+
 import { updateLanguage } from "./i18n";
 import { updateLocalUser } from "./user";
 

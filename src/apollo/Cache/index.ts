@@ -1,6 +1,7 @@
-import { InMemoryCache } from "@apollo/client";
-import { persistCache, PersistentStorage } from "apollo3-cache-persist";
 import { TypePolicy } from "apollo/TypePolicies";
+import { persistCache } from "apollo3-cache-persist";
+
+import { InMemoryCache } from "@apollo/client";
 
 async function initCache(): Promise<InMemoryCache> {
     const cache: InMemoryCache = new InMemoryCache({
@@ -9,7 +10,7 @@ async function initCache(): Promise<InMemoryCache> {
 
     await persistCache({
         cache,
-        storage: window.localStorage as PersistentStorage,
+        storage: window.localStorage,
         debug: process.env.NODE_ENV === "development",
     });
 

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Exception from "ant-design-pro/lib/Exception";
 import { deviceMin } from "styles";
 
 export const Container = styled.div`
@@ -20,7 +19,7 @@ export const Container = styled.div`
     }
 `;
 
-export const Result = styled(Exception)`
+export const Result = styled.div`
     .antd-pro-exception-content {
         h1 {
             color: ${props => props.theme.colors.black};

@@ -1,5 +1,9 @@
 import { makeVar } from "@apollo/client";
-import { UserModel } from "apollo/Models";
+
+type UserModel = {
+    __typename: string;
+    isLoggedIn: boolean;
+};
 
 export const initialUser = makeVar<UserModel>({
     __typename: "LocalUser",
