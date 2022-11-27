@@ -1,7 +1,6 @@
 import React from "react";
 
 import { getApolloClient } from "apollo";
-import { createBrowserHistory } from "history";
 import createI18n from "i18n/i18n";
 import { I18nextProvider } from "react-i18next";
 
@@ -12,7 +11,6 @@ import App from "../index";
 
 describe("App Component", () => {
     test("renders App Component", async () => {
-        const history = createBrowserHistory();
         const client = await getApolloClient();
         const i18n = await createI18n(client);
 
