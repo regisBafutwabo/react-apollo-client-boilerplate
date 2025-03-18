@@ -1,3 +1,6 @@
+
+> [!WARNING]  
+> CURRENTLY WORKING ON AN UPDATE TO MAKE IT LIGHTER AND FAST
 <img src="https://i.ibb.co/wCr7NNT/react-apollo.png" style="text-align:center"/>
 
 # React Boilerplate with Typescript and Apollo Client
